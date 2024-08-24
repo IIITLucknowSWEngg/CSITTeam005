@@ -8,7 +8,7 @@ TEAM MEMBERS :
 | NAME | ROLL NUMBER | BRANCH | EMAIL ID | GITHUB ID |
 | ---- | ---- | ---- | ---- | ---- |
 | Arshia Adhya | LCS2023029 | Copmuter Science | arshia82385@gmail.com | ArshiaAdhya |
-| Anadi Mehta | roll_number | Branch | email | github id |
+| Anadi Mehta | LCS2023020 | Computer Science | anadimehtaa1@gmail.com |anadimehta |
 | Vinayak Chaurasia | roll_number | Branch | email | github id |
 | Pranav Reddy Katreddy | roll_number | Branch | email | github id |
 | Jigyasa Jamra | roll_number | Branch | email | github id |
