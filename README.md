@@ -14,4 +14,5 @@ TEAM MEMBERS :
 | Jigyasa Jamra | roll_number | Branch | email | github id |
 | Tanishq Aswar | roll_number | Branch | email | github id |
 | Akshita Agarwal | roll_number | Branch | email | github id |
-| Prince | roll_number | Branch | email | github id |
+| Prince Yadav | LIT2023050 | Information Technology | www.princetdl@gmail.com | prince9569 |
+|
