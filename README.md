@@ -13,6 +13,6 @@ TEAM MEMBERS :
 | Pranav Reddy Katreddy | roll_number | Branch | email | github id |
 | Jigyasa Jamra | roll_number | Branch | email | github id |
 | Tanishq Aswar | roll_number | Branch | email | github id |
-| Akshita Agarwal | roll_number | Branch | email | github id |
+| Akshita Agarwal | LIT2023056 | Information Technology | akshitaaeran8776@gmail.com| akshita-86 |
 | Prince Yadav | LIT2023050 | Information Technology | www.princetdl@gmail.com | prince9569 |
 |
