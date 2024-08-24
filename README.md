@@ -10,8 +10,8 @@ TEAM MEMBERS :
 | Arshia Adhya | LCS2023029 | Copmuter Science | arshia82385@gmail.com | ArshiaAdhya |
 | Anadi Mehta | LCS2023020 | Computer Science | anadimehtaa1@gmail.com |anadimehta |
 | Vinayak Chaurasia | roll_number | Branch | email | github id |
+| Jigyasa Jamra | LIT2023014 | Information Technology | jigyasajamra2023@gmail.com | jigyasajamra |
 | Pranav Reddy Katreddy | roll_number | Branch | email | github id |
-| Jigyasa Jamra | roll_number | Branch | email | github id |
 | Tanishq Aswar | roll_number | Branch | email | github id |
 | Akshita Agarwal | LIT2023056 | Information Technology | akshitaaeran8776@gmail.com| akshita-86 |
 | Prince Yadav | LIT2023050 | Information Technology | www.princetdl@gmail.com | prince9569 |
