@@ -1,7 +1,9 @@
 # Project Title: Duolingo - Language Learning App
 
 ## Project Overview
-Duolingo is a language learning application designed to make learning new languages fun, engaging, and effective. It combines gamification, interactive exercises, and adaptive learning to create a personalized experience for every user. With over 300 million users worldwide, Duolingo has become a go-to platform for anyone wanting to explore a new language at their own pace. Its mission is simple: to make language learning accessible and enjoyable for everyone, no matter where they are in the world.
+Duolingo is a language-learning platform designed to make learning new languages simple, fun, and engaging for everyone. It offers courses for all skill levels, using interactive lessons, speaking and listening exercises, and writing tasks to create a complete learning experience. With features like points, streaks, and leaderboards, Duolingo keeps users motivated and helps them stay consistent. Its mobile-friendly design means users can learn anytime, anywhere, making it a convenient choice for over 300 million learners worldwide.
+
+What makes Duolingo special is its goal to make education free and available to everyone. The platform regularly introduces new features like Duolingo Stories and advanced conversational tools to keep learning exciting and effective. By combining education with gamification, Duolingo turns language learning into a fun journey, empowering people to explore new languages and cultures at their own pace.
 
 ## High-Level Goals
 1. *Engagement through Gamification* :Duolingo transforms learning into an interactive game by introducing points, streaks, leaderboards, and rewards. This not only keeps users motivated but also makes the process of learning a new language feel exciting and enjoyable.
