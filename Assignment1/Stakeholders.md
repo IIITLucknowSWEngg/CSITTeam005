@@ -1,165 +1,45 @@
 # Stakeholders
-This document outlines the various stakeholders involved in the Duolingo Clone project. Understanding their roles, interests, and impact on the project is crucial to ensure the app’s success in meeting diverse needs. Stakeholders are classified into direct and indirect categories to highlight their influence and responsibilities.
 
-# 1. Direct Stakeholders
+This document outlines the key stakeholders involved in the Duolingo project. Stakeholders include individuals, groups, and organizations that are affected by or have an interest in the success of this project.
 
-## 1.1 Users
-**Profile**: This group includes a wide range of individuals who will use the software, including language learners of all levels. Users differ in age, skill level, and language goals.  
-One of them is:  
+---
 
-**Sophia**  
+## Project Team
 
-**Age**: 25  
+| Key Stakeholders             | Role                                                          | Responsibilities                                                                    | Impact                                                              | Qualifications                                                     |
+|-----------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------|
+| The Development Team              | Responsible for coding, testing, and implementing the platform.   | - Developing and maintaining the Duolingo application.<br>- Implementing new features and updates.<br>- Conducting thorough testing to ensure a high-quality user experience. | Drive innovation and ensure technical quality of the platform.         | Experts in computer science and software development with experience in building scalable systems. |
+| Project Manager                   | Oversees project timeline and execution.                          | - Managing project tasks and assignments.<br>- Ensuring adherence to schedule and scope.<br>- Main contact for project-related communication and coordination. | Ensure successful delivery of the project within time and scope.       | Experienced in project management, skilled in agile methodologies and tools. |
 
-**Occupation**: Graduate student  
+---
 
-**Background**: Sophia is a graduate student working toward her Master’s degree. She’s learning French to help with international studies and career opportunities. She prefers using Duolingo due to its flexibility and ability to fit into her busy schedule.  
+## Product Stakeholders
 
-**Goal**: Access a convenient, engaging, and personalized language learning experience that fits into her daily life.
+| Key Stakeholders             | Role                                                          | Responsibilities                                                                    | Impact                                                              | Qualifications                                                     |
+|-----------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------|
+| Educational Institutions          | Schools and universities utilizing the platform.                  | - Integrating Duolingo into their curriculum.<br>- Providing feedback on educational effectiveness.<br>- Collaborating on research and development. | Contribute to the platform's educational credibility and adoption.     | Established institutions with expertise in pedagogy and curriculum design. |
+| *Users*         |                                                                       |                                                                                                                  |                                                               |                                                                              |
+| Jigyasa Jamra                  | Beginner Learner (Hindi Speaker)                                  | - Practicing basic English vocabulary.<br>- Engaging with beginner-level lessons and games. | Helps improve beginner-level engagement and content relevance. | Native Hindi speaker with a desire to improve English skills. |
+| Tanishq Aswar                 | Intermediate Learner (Marathi Speaker)                            | - Learning English grammar and conversation.<br>- Tracks daily progress and milestones. | Contributes to intermediate content development. | Intermediate level learner, fluent in Marathii and aiming to strengthen English proficiency. |
+| Arshia Adhya                   | Advanced Learner (Gujarati Speaker)                               | - Engages in advanced English lessons, focusing on professional language skills.<br>- Reviews complex grammar and vocabulary. | Supports advanced content innovation and retention. | Native Gujarati speaker, working toward fluency for professional purposes. |
+| Pranav Reddy                    | Casual Learner (Telugu Speaker)                                    | - Learning English casually on weekends.<br>- Prefers short, engaging lessons over formal ones. | Helps develop content for casual learners and inform product design. | Native Telugu speaker with a focus on casual, enjoyable learning. |
 
-## 1.2 Customers
-**Profile**: These are the individuals or organizations that have commissioned or are the target market for the software. In the case of the Duolingo Clone, the target customers could include language learners, educational institutions, and businesses offering language training to employees.  
-One of them is:  
+---
 
-**Rajesh**  
+## External Stakeholders
 
-**Age**: 42  
+| Key Stakeholders             | Role                                                          | Responsibilities                                                                    | Impact                                                              | Qualifications                                                     |
+|-----------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------|
+| Investors or Sponsors             | Provide financial or technical support.                           | - Offering funding or resources in exchange for revenue share or partnership benefits.<br>- Supporting marketing and expansion efforts. | Enable scalability and provide resources for expansion.                | Individuals or organizations with expertise in ed-tech investments and partnerships. |
+| Language Experts                  | Collaborate on content creation and review.                       | - Ensuring the accuracy and quality of language courses.<br>- Providing insights on language learning methodologies.<br>- Helping to localize content for different regions. | Improve the authenticity and effectiveness of language learning materials. | Professionals with academic or native proficiency in multiple languages. |
+| Content Creators                  | Use the platform for creating language-related content.           | - Producing content such as tutorials, reviews, and promotional materials.<br>- Promoting the platform through social media and other channels. | Increase visibility and user engagement through creative promotions.   | Influencers and educators with a strong online presence and outreach.  |
+| Developers Community              | Contribute to open-source enhancements.                           | - Providing code enhancements, bug fixes, and feedback.<br>- Engaging with the community for collaborative development. | Support platform innovation and improve code quality through collaboration. | Skilled developers passionate about contributing to ed-tech solutions. |
 
-**Occupation**: Corporate Trainer  
+---
 
-**Background**: Rajesh is responsible for training employees in a large corporation. He is interested in using Duolingo to help his team improve their business English skills for better communication with international clients.  
+## Regulatory Stakeholders
 
-**Goal**: Obtain a reliable and scalable solution for learning and teaching languages, tailored to his company's specific needs.
-
-## 1.3 Market Analysts
-**Profile**: Market analysts help shape the direction of the project by identifying trends and user needs. They act as proxy customers, ensuring the app meets market demands. They focus on understanding user behaviour and forecasting the app’s potential in the competitive landscape.  
-One of them is:  
-
-**Carlos**  
-
-**Age**: 36  
-
-**Occupation**: Market Research Analyst  
-
-**Background**: Carlos works for a consulting firm specializing in educational technology. His job is to identify market opportunities and advise on how apps like Duolingo can evolve to remain competitive.  
-
-**Goal**: Ensure the app is well-positioned within the language learning market, with features and content that meet current demand and attract a large user base.
-
-## 1.4 Software Engineers
-**Profile**: The development team, including web developers, mobile developers, quality assurance engineers, and security experts, play a key role in building and maintaining the Duolingo Clone app. They are responsible for coding, testing, and ensuring the app’s performance.  
-One of them is:  
-
-**Alex**  
-
-**Age**: 30  
-
-**Occupation**: Lead Software Engineer  
-
-**Background**: Alex is responsible for designing the backend architecture of the Duolingo Clone. He ensures that the app can handle a growing user base while maintaining fast response times.  
-
-**Goal**: Deliver high-quality, reusable software components that meet customer needs while considering development efficiency and project constraints.
-
-# 2. Indirect Stakeholders
-
-## 2.1 Regulators
-**Profile**: Regulatory authorities have an indirect but critical stake in ensuring that the app complies with relevant industry standards and regulations. In certain domains like education, data privacy and accessibility standards may need to be adhered to.  
-One of them is:  
-
-**Linda**  
-
-**Age**: 47  
-
-**Occupation**: Data Protection Officer  
-
-**Background**: Linda works in a regulatory agency, ensuring that apps like Duolingo comply with international data privacy standards such as GDPR. She advises on user data handling practices and ensures compliance.  
-
-**Goal**: Ensure the app meets legal and regulatory requirements, such as data privacy regulations (e.g., GDPR) or accessibility standards.
-
-## 2.2 Language Educators
-**Profile**: Teachers and educators may use the Duolingo Clone as a supplemental learning tool for their students. They are interested in the quality and accuracy of the language content, as well as the app’s ease of integration into formal education.  
-One of them is:  
-
-**Isabella**  
-
-**Age**: 29  
-
-**Occupation**: Spanish Teacher  
-
-**Background**: Isabella teaches Spanish at a high school and uses Duolingo Clone as a homework resource for her students. She appreciates its engaging interface and gamified lessons, which help her students practice outside of the classroom.  
-
-**Goal**: Provide students with additional resources to practice and reinforce what they learn in class.
-
-## 2.3 Language Schools
-**Profile**: Language schools may partner with or recommend the app to attract new students or provide complementary learning resources.  
-One of them is:  
-
-**Alfred**  
-
-**Age**: 33  
-
-**Occupation**: Language School Director  
-
-**Background**: Alfred runs a language school and offers Duolingo Clone as a supplemental resource to his students, allowing them to study at their own pace in addition to formal lessons.  
-
-**Goal**: Expand his school’s offerings and reach new students by incorporating modern digital tools like Duolingo Clone.
-
-## 2.4 Travel Companies
-**Profile**: Travel companies can promote the app as a tool for tourists looking to learn the basics of a language before traveling.  
-One of them is:  
-
-**Eva**  
-
-**Age**: 38  
-
-**Occupation**: Travel Consultant  
-
-**Background**: Eva specializes in organizing trips for international clients. She recommends Duolingo Clone to travelers looking to pick up basic language skills before visiting non-English speaking countries.  
-
-**Goal**: Offer clients a tool to enhance their travel experience by learning essential phrases in their destination’s language.
-
-## 2.5 Advertisers
-**Profile**: Businesses that aim to advertise products or services to language learners. These stakeholders use the platform’s large user base to promote language-learning tools, travel products, or educational materials.  
-One of them is:  
-
-**Jason**  
-
-**Age**: 44  
-
-**Occupation**: Digital Marketing Manager  
-
-**Background**: Jason is responsible for promoting online courses and educational materials to language learners. He finds Duolingo Clone an excellent platform due to its large, focused audience and ability to target ads based on user progress.  
-
-**Goal**: Achieve targeted marketing success and a good return on advertising investment.
-
-# 3. Project Team
-
-## 3.1 Project Managers
-**Role**: Plan, organize, and oversee the project, ensuring resources are allocated effectively and timelines are met. They balance project delivery, stakeholder expectations, and team coordination.  
-One of them is:  
-
-**Olivia**  
-
-**Age**: 34  
-
-**Occupation**: Senior Project Manager  
-
-**Background**: Olivia manages the development of the Duolingo Clone, ensuring that the project stays on track, the team is productive, and all stakeholders’ needs are met.  
-
-**Goal**: Deliver the project on time, within budget, and according to the outlined features.
-
-## 3.2 Software Engineers
-**Role**: The core development team responsible for building the app, ensuring compatibility across platforms, managing backend infrastructure, and securing the app.  
-One of them is:  
-
-**Sam**  
-
-**Age**: 27  
-
-**Occupation**: Mobile Developer  
-
-**Background**: Sam works on the mobile version of Duolingo Clone, ensuring that the user experience is smooth on both iOS and Android platforms. He also focuses on making the app lightweight and responsive.  
-
-**Goal**: Build a scalable, secure, and efficient app, reusing components where possible to reduce cost and time while meeting customer requirements.
-
-# Conclusion
-This analysis outlines key stakeholders for the Duolingo Clone project, including users, customers, market analysts, and software engineers. Indirectly, regulators, educators, and advertisers also influence the project. By addressing their needs and feedback, the project aims to deliver an effective, user-centered language learning app.
+| Key Stakeholders             | Role                                                          | Responsibilities                                                                    | Impact                                                              | Qualifications                                                     |
+|-----------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------|
+| Data Privacy and Security Authorities | Ensure compliance with data privacy laws.                        | - Overseeing adherence to global/regional data privacy regulations (e.g., GDPR).<br>- Ensuring the security and privacy of user data. | Ensure legal compliance and build user trust by protecting data.        | Accredited agencies specializing in data protection and privacy laws.  |
+| Language Regulatory Bodies        | Standardize language learning content.                            | - Monitoring adherence to language guidelines and norms.<br>- Ensuring that courses align with recognized language standards.<br>- Validating the accuracy of language content. | Enhance credibility and maintain high linguistic standards.            | Renowned institutions or boards specializing in language regulation and education. |
