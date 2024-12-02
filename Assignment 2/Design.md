@@ -19,6 +19,7 @@
 ### 4.2 Data Dictionary
 
 ## Component Design
+### 5.1 Gamification Engine
 
 ## Human Interface Design
 ### 6.1 Overview of User Interface
@@ -98,3 +99,49 @@ Each module is further broken into submodules. For instance:
 
 ### 3.3 Design Rationale
 The modular design ensures scalability, maintainability, and flexibility. For example, the speech recognition engine can be updated independently without affecting other components. This modularity is crucial for a large-scale system like Duolingo, which supports millions of users.
+
+## 4. Data Design
+### 4.1 Data Description
+Duolingo organizes its data into three major categories:
+- *User Data* - Includes personal details, progress, and achievements.
+- *Course Data* - Contains lessons, vocabulary, and multimedia files.
+- *Gamification Data* - Tracks points, streaks, and leaderboard positions.
+  
+### 4.2 Data Dictionary
+![image](https://github.com/user-attachments/assets/30cfe2db-ac48-4a55-a1a9-92eba77eb513)
+
+## 5. Component Design
+Each component in Duolingo is documented with pseudocode, algorithms, and descriptions.
+### 5.1 Gamification Engine
+Algorithm to Calculate Streaks:
+![image](https://github.com/user-attachments/assets/ce3db62f-d12e-42fb-a4cb-be6f42c772d0)
+
+## 6. Human Interface Design
+### 6.1 Overview of User Interface
+The app’s interface is designed to be intuitive and engaging, ensuring users can:
+
+- Navigate lessons quickly.
+- View their progress effortlessly.
+- Participate in challenges with minimal effort.
+  
+### 6.2 Screen Images
+The following are key screens in the application:
+
+- *Login Page* - Allows users to log in to their accounts.
+- *Dashboard* - Displays user progress, streaks, and leaderboards.
+- *Lesson Screen* - Presents vocabulary and exercises interactively.
+- *Progress Tracker* - Provides a visual representation of the user's learning journey.
+
+### 6.3 Screen Objects and Actions
+![image](https://github.com/user-attachments/assets/9260d725-5735-4d3a-bc9f-81dacf8b4a31)
+
+## Requirements Matrix
+![image](https://github.com/user-attachments/assets/0c3dee43-da38-426d-b928-adc72b35066c)
+
+## Appendices
+This section includes additional materials such as:
+
+- Detailed diagrams of system workflows.
+- Technical notes on data storage and retrieval.
+- Research references and resources used in designing the system.
+
