@@ -28,7 +28,6 @@
 
 ## Requirements Matrix
 
-## Appendices
 
 ## 1. Introduction
 ### 1.1 Purpose
@@ -111,7 +110,7 @@ Duolingo organizes its data into three major categories:
 ![image](https://github.com/user-attachments/assets/30cfe2db-ac48-4a55-a1a9-92eba77eb513)
 
 ## 5. Component Design
-Each component in Duolingo is documented with pseudocode, algorithms, and descriptions.
+
 ### 5.1 Gamification Engine
 Algorithm to Calculate Streaks:
 ![image](https://github.com/user-attachments/assets/ce3db62f-d12e-42fb-a4cb-be6f42c772d0)
@@ -133,15 +132,36 @@ The following are key screens in the application:
 - *Progress Tracker* - Provides a visual representation of the user's learning journey.
 
 ### 6.3 Screen Objects and Actions
-![image](https://github.com/user-attachments/assets/9260d725-5735-4d3a-bc9f-81dacf8b4a31)
+
+#### Login Page
+![image](https://github.com/user-attachments/assets/348ddd9c-210e-420f-b50f-92939873be6b)
+
+- Image of Login Page :-
+![image](https://github.com/user-attachments/assets/aa54a33d-e7be-4379-bffa-3778dbca5fe3)
+
+#### Dashboard
+![image](https://github.com/user-attachments/assets/05b0fc77-e0fd-40c4-9de8-6623095930ae)
+
+- Image of Dashboard :-
+![image](https://github.com/user-attachments/assets/2f6995ce-bb74-46e7-b923-6133c3bbc616)
+
+#### Lesson Screen
+![image](https://github.com/user-attachments/assets/b1ef7bed-f7f3-48e9-9e50-01d90103226d)
+
+- Image of Lesson Screen :- 
+![image](https://github.com/user-attachments/assets/3e12e6d4-07f3-4b75-b8f9-c853f5c09af0)
+
+#### Progress Tracker
+![image](https://github.com/user-attachments/assets/e09e65f3-3136-4c2b-bef1-49c9591da53f)
+
+- Image of Progress Tracker:- 
+![image](https://github.com/user-attachments/assets/b473fbab-a94b-42c5-a913-cc6ddb343561)
+
+
+
+
 
 ## Requirements Matrix
-![image](https://github.com/user-attachments/assets/0c3dee43-da38-426d-b928-adc72b35066c)
+![image](https://github.com/user-attachments/assets/db1adaaf-2ac2-43a2-8bec-737116b71935)
 
-## Appendices
-This section includes additional materials such as:
-
-- Detailed diagrams of system workflows.
-- Technical notes on data storage and retrieval.
-- Research references and resources used in designing the system.
 
