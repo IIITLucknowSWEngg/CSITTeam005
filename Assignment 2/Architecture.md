@@ -1,7 +1,9 @@
-# Duolingo Clone Architecture
+# Duolingo Documentation Architecture
 ## 1. System Context Diagram
+The System Context Diagram provides a high-level view of the Duolingo documentation system, showcasing how external actors (users and services) interact with the primary subsystems within the application. 
 
- ![duol1](https://github.com/user-attachments/assets/2fad14d1-d971-4eb9-94e6-95379a30ed56)
+ ![image](https://github.com/user-attachments/assets/1b701eac-f29c-4388-95df-023e3a10f006)
+
 
 
 ```
@@ -11,8 +13,8 @@ actor "Learner" as Player
 actor "Educator" as Admin
 actor "Notification Service" as NotificationService
 
-' System Boundary: Duolingo Clone App
-package "Duolingo Clone App" {
+' System Boundary: Duolingo App
+package "Duolingo App" {
 
     ' Subsystems
     rectangle "User Authentication \nand Profile Management" as AuthSystem
@@ -38,13 +40,14 @@ LessonSystem --> NotificationService : Send Lesson Reminders
 ```
 ---
 ## 2. Container Diagram 
-The container diagram breaks down the system into high-level containers and their interactions.
+The Container Diagram outlines the high-level architecture of the Duolingo documentation system, breaking it into containers that represent major building blocks of the system. It provides a detailed view of the system's structure, showing how these containers interact with each other and with external services.
 
-![containerd](https://github.com/user-attachments/assets/e2ebdcb0-3063-45d9-bbab-ce5f399a0616)
+![image](https://github.com/user-attachments/assets/c86f2248-cd49-4f85-8b28-052db572d79c)
+
 
 ```
 @startuml
-title Container Diagram - Duolingo Clone
+title Container Diagram - Duolingo Documentation
 
 ' Add primary containers
 rectangle "Web/Mobile App" as App <<User Interface>> #lightblue
@@ -73,15 +76,19 @@ APIGateway --> NotificationService : Player Notifications
 LessonService --> LessonDB : Manage Lessons
 ProgressService --> UserDB : User Progress
 LeaderboardService --> LeaderboardDB : Update Rankings
-
 @enduml
+
+
 ```
 ---
 ## 3. Component Diagrams
+The Component Diagram breaks down the key subsystems of the Duolingo documentation system and explains how individual components interact to fulfill system functionality. This diagram is presented from two perspectives: Learners (Players) and Admins (Educators), focusing on their unique interactions with the system.
+
 ### 3.1 Component Diagram for Learners (Players)
 This diagram shows the system components and interactions from the learner's perspective.
 
-![component](https://github.com/user-attachments/assets/f853e061-2c7e-4443-a7ca-3a083b068480)
+![image](https://github.com/user-attachments/assets/51efad0b-7926-43ce-a12a-b82152ce3f4f)
+
 
 
 ```
@@ -89,8 +96,8 @@ This diagram shows the system components and interactions from the learner's per
 ' External Actor
 actor "Player" as Player
 
-' System Boundary: Duolingo Clone App
-package "Duolingo Clone App" {
+' System Boundary: Duolingo App
+package "Duolingo App" {
 
     ' Subsystems for Player
     rectangle "Authentication \nand Profile Management" as AuthSystem
@@ -107,11 +114,13 @@ Player --> ProgressTracker : Track Progress
 Player --> Leaderboard : View Rankings
 Player --> ChatSystem : Chat with Other Learners
 @enduml
+
 ```
 ### 3.2 Component Diagram for Admins
 This diagram shows the system components and interactions from the admin's perspective.
 
-![educatorcomponent](https://github.com/user-attachments/assets/09bd840e-a1a6-4df3-94b3-80e52f33c87f)
+![image](https://github.com/user-attachments/assets/eadba074-9b95-40dd-9627-6fe29b7a39d0)
+
 
 
 ```
@@ -119,7 +128,7 @@ This diagram shows the system components and interactions from the admin's persp
 ' External Actor
 actor "Admin" as Admin
 
-' System Boundary: Duolingo Clone Admin Panel
+' System Boundary: Duolingo Admin Panel
 package "Admin Panel" {
 
     ' Subsystems for Admin
@@ -137,16 +146,18 @@ Admin --> LeaderboardManagement : Manage Rankings
 Admin --> NotificationManagement : Send Notifications
 Admin --> ReportsAnalytics : Generate Reports
 @enduml
+
 ```
 ---
 # 4. Deployment Diagram
-This diagram outlines the physical deployment of the system across servers, databases, and external services.
+The Deployment Diagram illustrates the physical deployment of the Duolingo documentation system, including the hardware, software, and external services involved. It showcases how the system’s components are distributed across various nodes and interact to deliver functionality.
 
-![deployment diagram](https://github.com/user-attachments/assets/d1e87501-f46a-427c-b12c-1667e5e94a9e)
+![image](https://github.com/user-attachments/assets/2b95a395-2a60-41e0-a9ef-1f9603930c45)
+
 
 ```
 @startuml
-title Deployment Diagram - Duolingo Clone
+title Deployment Diagram - Duolingo Documentation
 
 node "Player's Device" {
     [Web/Mobile App] <<User Interface>>
@@ -180,5 +191,6 @@ cloud "External Services" {
 [Progress Tracker Service] --> UserDB : User Data
 [Leaderboard Service] --> LeaderboardDB : Rankings
 @enduml
+
 ```
 ---
