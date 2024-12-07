@@ -10,10 +10,10 @@
   - [External Stakeholders](#external-stakeholders)
   - [Regulatory Stakeholders](#regulatory-stakeholders)
 - [Production Login Users](#production-login-users)
-  - [Jigyasa Jamra](#jigyasa-jamra)
-  - [Tanishq Aswar](#tanishq-aswar)
-  - [Arshia Adhya](#arshia-adhya)
-  - [Pranav Reddy](#pranav-reddy)
+  - [Shreya Singh](#shreya_singh)
+  - [Vishal Mane](#vishal_mane)
+  - [Geetanjali Gada](#geetanjali_gada)
+  - [Vijay Chandrashekhar](#vijay_chandrashekhar)
 
 ---
 
@@ -113,7 +113,7 @@ This document defines the user requirements for the Duolingo project. It outline
 
 ## Production Login Users
 
-### Jigyasa Jamra (Beginner Learner, Hindi Speaker)
+### Shreya Singh (Beginner Learner, Hindi Speaker)
 
 - *User Requirements*:
   - *User Experience*: I need simple, basic lessons that help me learn English vocabulary and basic grammar in a fun and interactive way.
@@ -123,7 +123,7 @@ This document defines the user requirements for the Duolingo project. It outline
 
 ---
 
-### Tanishq Aswar (Intermediate Learner, Marathi Speaker)
+### Vishal Mane (Intermediate Learner, Marathi Speaker)
 
 - *User Requirements*:
   - *User Experience*: I prefer lessons that challenge my grammar and vocabulary. I want to improve my conversational skills in English through interactive exercises.
@@ -133,7 +133,7 @@ This document defines the user requirements for the Duolingo project. It outline
 
 ---
 
-### Arshia Adhya (Advanced Learner, Gujarati Speaker)
+### Geetanjali Gada (Advanced Learner, Gujarati Speaker)
 
 - *User Requirements*:
   - *User Experience*: I need high-level lessons focused on professional language skills, especially business vocabulary and formal writing.
@@ -143,7 +143,7 @@ This document defines the user requirements for the Duolingo project. It outline
 
 ---
 
-### Pranav Reddy (Casual Learner, Telugu Speaker)
+### Vijay Chandrashekhar (Casual Learner, Telugu Speaker)
 
 - *User Requirements*:
   - *User Experience*: I prefer quick and casual lessons that fit into my weekends. Short, engaging activities with no long-term pressure are ideal for me.
