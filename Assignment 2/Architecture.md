@@ -149,7 +149,272 @@ Admin --> ReportsAnalytics : Generate Reports
 
 ```
 ---
-# 4. Deployment Diagram
+#4. Code Diagrams
+### 1. Authentication and Profile Management
+This component manages user authentication and profile data.
+```
+@startuml
+title C4 Code Diagram - Authentication and Profile Management
+
+package "Authentication and Profile Management" {
+    class AuthService {
+        + register(user: User): User
+        + login(email: String, password: String): Token
+        + logout(token: Token): void
+    }
+
+    class User {
+        - id: String
+        - name: String
+        - email: String
+        - passwordHash: String
+        + validateCredentials(): Boolean
+    }
+
+    class Profile {
+        - userId: String
+        - bio: String
+        - avatar: String
+        + updateProfile(bio: String, avatar: String): void
+    }
+
+    class AuthRepository {
+        + findUserByEmail(email: String): User
+        + saveUser(user: User): void
+        + getUserProfile(userId: String): Profile
+    }
+}
+
+AuthService --> User : "Validates Credentials"
+AuthService --> AuthRepository : "Fetch/Store User Data"
+AuthRepository --> "Database (Users Table)" : "CRUD Operations"
+Profile --> "Database (Users Table)" : "Stores User Info"
+@enduml
+
+```
+![image](https://github.com/user-attachments/assets/63a411a6-e203-482a-bfb6-22b718c8d052)
+
+###2. Course and Content Management
+This component is responsible for course material, lessons, and exercises.
+```
+@startuml
+title C4 Code Diagram - Course and Content Management
+
+package "Course and Content Management" {
+    class CourseService {
+        + fetchCourses(): List<Course>
+        + createCourse(course: Course): Course
+        + updateCourse(course: Course): Course
+    }
+
+    class Course {
+        - id: String
+        - title: String
+        - description: String
+        - lessons: List<Lesson>
+        + getTitle(): String
+        + getDescription(): String
+    }
+
+    class Lesson {
+        - id: String
+        - title: String
+        - content: String
+        + getContent(): String
+    }
+
+    class CourseRepository {
+        + findCourseById(courseId: String): Course
+        + saveCourse(course: Course): void
+        + fetchAllCourses(): List<Course>
+    }
+}
+
+CourseService --> Course : "Manages Course Data"
+CourseService --> CourseRepository : "Fetch/Store Course Data"
+CourseRepository --> "Database (Lessons Table)" : "CRUD Operations"
+@enduml
+
+```
+![image](https://github.com/user-attachments/assets/f142a389-1f5a-4e76-a1be-c2753086a9a1)
+
+###3. Progress Tracker and Analytics
+This component tracks user progress in lessons.
+```
+@startuml
+title C4 Code Diagram - Progress Tracker and Analytics
+
+package "Progress Tracker and Analytics" {
+    class ProgressTracker {
+        + recordProgress(userId: String, lessonId: String, status: String): void
+        + getProgress(userId: String): List<Progress>
+        + calculateScore(userId: String): int
+    }
+
+    class Progress {
+        - userId: String
+        - lessonId: String
+        - status: String
+        - timestamp: Date
+        + getStatus(): String
+        + setStatus(status: String): void
+    }
+
+    class ProgressRepository {
+        + saveProgress(progress: Progress): void
+        + fetchProgress(userId: String): List<Progress>
+    }
+}
+
+ProgressTracker --> Progress : "Tracks Progress"
+ProgressTracker --> ProgressRepository : "CRUD Operations"
+ProgressRepository --> "Database (Progress Table)" : "Stores Progress"
+@enduml
+```
+![image](https://github.com/user-attachments/assets/1ad5810e-eced-4815-b444-515227a90ec8)
+
+
+###4. Leaderboard and Statistics
+This component displays and manages the leaderboard.
+```
+@startuml
+title C4 Code Diagram - Leaderboard and Statistics
+
+package "Leaderboard and Statistics" {
+    class LeaderboardService {
+        + getLeaderboard(): List<UserScore>
+        + updateScore(userId: String, score: int): void
+    }
+
+    class UserScore {
+        - userId: String
+        - score: int
+        + getScore(): int
+        + setScore(score: int): void
+    }
+
+    class LeaderboardRepository {
+        + fetchScores(): List<UserScore>
+        + saveScore(userScore: UserScore): void
+    }
+}
+
+LeaderboardService --> UserScore : "Manages Scores"
+LeaderboardService --> LeaderboardRepository : "CRUD Operations"
+LeaderboardRepository --> "Database (Progress Table)" : "Stores Score Data"
+@enduml
+
+```
+![image](https://github.com/user-attachments/assets/dd2051f4-352c-4ea0-968f-b3c9994da8d7)
+
+###5. In-Game Chat and Social Interaction
+This component handles in-game communication between players.
+```
+@startuml
+title C4 Code Diagram - In-Game Chat and Social Interaction
+
+package "In-Game Chat and Social Interaction" {
+    class ChatService {
+        + sendMessage(senderId: String, receiverId: String, message: String): void
+        + getMessages(userId: String): List<Message>
+    }
+
+    class Message {
+        - senderId: String
+        - receiverId: String
+        - content: String
+        - timestamp: Date
+        + getContent(): String
+        + getTimestamp(): Date
+    }
+
+    class ChatRepository {
+        + saveMessage(message: Message): void
+        + fetchMessages(userId: String): List<Message>
+    }
+}
+
+ChatService --> Message : "Manages Messages"
+ChatService --> ChatRepository : "CRUD Operations"
+ChatRepository --> "Database (Messages Table)" : "Stores Messages"
+@enduml
+
+```
+![image](https://github.com/user-attachments/assets/d77fb0b8-85a2-40f5-8f98-7c912a4d467b)
+
+###6. Admin Panel Components
+#### 6.1 User Management
+```
+@startuml
+title C4 Code Diagram - User Management
+
+package "User Management" {
+    class UserService {
+        + createUser(user: User): User
+        + updateUser(userId: String, user: User): User
+        + deleteUser(userId: String): void
+    }
+
+    class User {
+        - id: String
+        - name: String
+        - email: String
+        + getName(): String
+        + setEmail(email: String): void
+    }
+
+    class UserRepository {
+        + findUserById(userId: String): User
+        + saveUser(user: User): void
+        + deleteUser(userId: String): void
+    }
+}
+
+UserService --> User : "Manages User Data"
+UserService --> UserRepository : "CRUD Operations"
+UserRepository --> "Database (Users Table)" : "CRUD Operations"
+@enduml
+
+```
+![image](https://github.com/user-attachments/assets/c0b97527-3250-4c7d-9bcb-e470f830215e)
+
+####6.2Content Management
+```
+v@startuml
+title C4 Code Diagram - Content Management
+
+package "Content Management" {
+    class ContentService {
+        + createCourse(course: Course): Course
+        + updateCourse(courseId: String, course: Course): Course
+        + deleteCourse(courseId: String): void
+    }
+
+    class Course {
+        - id: String
+        - title: String
+        - description: String
+        + getTitle(): String
+        + setDescription(description: String): void
+    }
+
+    class ContentRepository {
+        + findCourseById(courseId: String): Course
+        + saveCourse(course: Course): void
+        + deleteCourse(courseId: String): void
+    }
+}
+
+ContentService --> Course : "Manages Course Data"
+ContentService --> ContentRepository : "CRUD Operations"
+ContentRepository --> "Database (Courses Table)" : "CRUD Operations"
+@enduml
+
+```
+![image](https://github.com/user-attachments/assets/9ff57e46-fee9-4d4e-8f9d-3c5dca87ba22)
+
+---
+# 5. Deployment Diagram
 The Deployment Diagram illustrates the physical deployment of the Duolingo documentation system, including the hardware, software, and external services involved. It showcases how the system’s components are distributed across various nodes and interact to deliver functionality.
 
 ![image](https://github.com/user-attachments/assets/2b95a395-2a60-41e0-a9ef-1f9603930c45)

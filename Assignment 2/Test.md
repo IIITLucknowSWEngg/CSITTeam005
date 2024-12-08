@@ -313,25 +313,7 @@ if('should show lesson suggestions based on progress', () => {
 });
 ```
 
-## Scenario 4: User completes a lesson and earns XP points
-
-### Gherkin:
-```gherkin
-Given the user has completed all exercises in a lesson
-When the user finishes the last exercise
-Then the user should earn XP points for the lesson
-And the total XP should be updated in the user profile
-```
-
-### Chai Test:
-```javascript
-if('should earn XP points upon completing a lesson', () => {
-  expect(this.XP).to.be.above(0);
-  expect(this.totalXP).to.equal(this.previousXP + this.XP);
-});
-```
-
-## Scenario 5: User's progress is saved after each session
+## Scenario 4: User's progress is saved after each session
 
 ### Gherkin:
 ```gherkin
@@ -350,7 +332,7 @@ if('should resume the lesson from the last completed exercise after logging back
 });
 ```
 
-## Scenario 6: Speech recognition evaluates the user’s pronunciation
+## Scenario 5: Speech recognition evaluates the user’s pronunciation
 
 ### Gherkin:
 ```gherkin

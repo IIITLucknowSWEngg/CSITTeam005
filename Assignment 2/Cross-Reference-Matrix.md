@@ -1,6 +1,6 @@
 # Cross-Reference Matrix
 
-This matrix maps the system requirements to their corresponding components, design sections, and test cases to ensure traceability and completeness of the Duolingo Clone project.
+This matrix maps the system requirements to their corresponding components, design sections, and test cases to ensure traceability and completeness of the Duolingo  project.
 
 | **System Requirement**                                  | **Component/Module**         | **Design Section**                     | **Test Case**                                              |
 |---------------------------------------------------------|------------------------------|----------------------------------------|-----------------------------------------------------------|

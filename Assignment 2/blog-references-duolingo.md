@@ -1,4 +1,4 @@
-# Blogs and Resources for Building Our Duolingo-Inspired Clone
+# Blogs and Resources for Building Our Duolingo-Inspired documentation
 
 This document consolidates key blogs, articles, and resources that contributed to the design and documentation of our language learning platform, inspired by Duolingo. These insights helped ensure a robust, scalable, and user-centric development framework.
 
