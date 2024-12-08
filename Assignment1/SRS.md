@@ -52,7 +52,7 @@ Duolingo is a gamified and adaptive language learning platform available on mobi
 ## 3. General System Requirements  
 
 - Cross-platform compatibility (mobile and web).  
-- Minimum server uptime of [99.9%](#https://uptime.is/99.9).  
+- Minimum server uptime of [99.9%](https://uptime.is/99.9).  
 - Maximum lesson loading time of 2 seconds.  
 - Secure integration with payment systems (e.g., PayPal, Google Pay).  
 
