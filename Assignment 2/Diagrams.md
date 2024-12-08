@@ -1,13 +1,13 @@
 # Diagram.md - Duolingo Project
 
-This document provides an overview and description of the various UML diagrams that represent the architecture, use cases, and interactions within the Duolingo clone system. These diagrams serve as blueprints for understanding how different components and entities interact within the system.
+This document provides an overview and description of the various UML diagrams that represent the architecture, use cases, and interactions within Duolingo's system. These diagrams serve as blueprints for understanding how different components and entities interact within the system.
 
 ---
 
 ## 1. **System Architecture Diagram**
 
 ### Description:
-The **System Architecture Diagram** represents the overall structure of the Duolingo clone system. It details the interaction between the client-side (User's Device), server-side services, external services, and databases. This diagram provides a high-level overview of how different components are interconnected, ensuring smooth data flow and interactions.
+The **System Architecture Diagram** represents the overall structure of Duolingo's system. It details the interaction between the client-side (User's Device), server-side services, external services, and databases. This diagram provides a high-level overview of how different components are interconnected, ensuring smooth data flow and interactions.
 
 ### Components:
 - **External Services**:
@@ -25,7 +25,7 @@ The **System Architecture Diagram** represents the overall structure of the Duol
     - **Lesson Database (LessonDB)**: Stores lesson content, including text, exercises, and media.
     - **Leaderboard Database (LeaderboardDB)**: Stores ranking and leaderboard data for users.
 
-###UML Code
+### UML Code
 ```UML 
 @startuml
 title System Architecture Diagram - Duolingo Documentation
@@ -78,7 +78,7 @@ node "Database Server" {
 ## 2. **Use Case Diagram**
 
 ### Description:
-The **Use Case Diagram** outlines the different interactions between the users (Learners and Admins) and the Duolingo clone system. It highlights the main actions that users and administrators can perform within the system, including actions related to language learning, progress tracking, and system management.
+The **Use Case Diagram** outlines the different interactions between the users (Learners and Admins) and Duolingo's system. It highlights the main actions that users and administrators can perform within the system, including actions related to language learning, progress tracking, and system management.
 
 ### Actors:
 - **Learner (User)**: The primary user who interacts with the system to learn languages, track progress, and engage with exercises.
@@ -86,7 +86,7 @@ The **Use Case Diagram** outlines the different interactions between the users (
 - **Notification Service**: Sends reminders or notifications to users, such as course reminders, achievement updates, etc.
 - **Leaderboard System**: Updates rankings based on user performance in terms of lesson completion, points, and achievements.
 
-###UML Code
+### UML Code
 ```
 
 
@@ -146,7 +146,7 @@ Leaderboard --> UC5 : "Updates Rankings"
 ## 3. **Class Diagram**
 
 ### Description:
-The **Class Diagram** provides a detailed view of the classes in the Duolingo clone system, their attributes, methods, and relationships. It models the core entities such as `User`, `Course`, `Lesson`, `Exercise`, and more.
+The **Class Diagram** provides a detailed view of the classes in Duolingo's system, their attributes, methods, and relationships. It models the core entities such as `User`, `Course`, `Lesson`, `Exercise`, and more.
 
 ### Key Classes:
 - **User**: Represents the users of the system (Learners, Educators, Admins).
@@ -158,7 +158,7 @@ The **Class Diagram** provides a detailed view of the classes in the Duolingo cl
 - **Notification**: Sends notifications to users.
 - **Chat**: Manages user communication within the system.
 
-###UML Code
+### UML Code
 ```
 @startuml
 
@@ -299,7 +299,7 @@ The **Activity Diagram** outlines the flow of activities that a learner follows 
 3. **Learning and Exercises**: The user completes lessons and exercises.
 4. **Progress Update**: The user’s progress is updated based on performance.
 
-###UML Code
+### UML Code
 ```
 @startuml
 title Activity Diagram - Duolingo Project
@@ -489,7 +489,7 @@ The **Sequence Diagram** depicts the sequence of interactions between the user a
 2. **Lesson Start**: The user starts a lesson and interacts with exercises.
 3. **Progress Tracking**: The user's progress is tracked after completing exercises.
 
-###UML Code
+### UML Code
 ```
 @startuml
 title Sequence Diagram - Duolingo Project
@@ -527,4 +527,4 @@ Lesson -> User: sendCompletionMessage() #black
 
 ## Conclusion
 
-The UML diagrams outlined in this document provide a comprehensive understanding of the Duolingo clone system’s architecture, use cases, class structure, activities, and interactions. These diagrams are essential for both the development and maintenance of the system.
+The UML diagrams outlined in this document provide a comprehensive understanding of Duolingo's system architecture, use cases, class structure, activities, and interactions. These diagrams are essential for both the development and maintenance of the system.
