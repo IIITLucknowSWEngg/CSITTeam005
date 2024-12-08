@@ -378,7 +378,7 @@ UserRepository --> "Database (Users Table)" : "CRUD Operations"
 ```
 ![image](https://github.com/user-attachments/assets/c0b97527-3250-4c7d-9bcb-e470f830215e)
 
-####6.2Content Management
+#### 6.2Content Management
 ```
 v@startuml
 title C4 Code Diagram - Content Management
