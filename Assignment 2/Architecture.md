@@ -87,14 +87,15 @@ The Component Diagram breaks down the key subsystems of the Duolingo documentati
 ### 3.1 Component Diagram for Learners (Players)
 This diagram shows the system components and interactions from the learner's perspective.
 
-![image](https://github.com/user-attachments/assets/51efad0b-7926-43ce-a12a-b82152ce3f4f)
+![image](https://github.com/user-attachments/assets/43eda53c-004a-460e-9f7d-119f347081bf)
+
 
 
 
 ```
 @startuml
 ' External Actor
-actor "Player" as Player
+actor "Learner" as Player
 
 ' System Boundary: Duolingo App
 package "Duolingo App" {
