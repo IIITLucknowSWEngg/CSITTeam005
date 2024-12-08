@@ -149,7 +149,7 @@ Admin --> ReportsAnalytics : Generate Reports
 
 ```
 ---
-##4. Code Diagrams
+## 4. Code Diagrams
 ### 1. Authentication and Profile Management
 This component manages user authentication and profile data.
 ```
