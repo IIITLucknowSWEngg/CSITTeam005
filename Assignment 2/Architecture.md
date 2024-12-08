@@ -149,7 +149,7 @@ Admin --> ReportsAnalytics : Generate Reports
 
 ```
 ---
-#4. Code Diagrams
+##4. Code Diagrams
 ### 1. Authentication and Profile Management
 This component manages user authentication and profile data.
 ```
@@ -194,7 +194,7 @@ Profile --> "Database (Users Table)" : "Stores User Info"
 ```
 ![image](https://github.com/user-attachments/assets/63a411a6-e203-482a-bfb6-22b718c8d052)
 
-###2. Course and Content Management
+### 2. Course and Content Management
 This component is responsible for course material, lessons, and exercises.
 ```
 @startuml
@@ -238,7 +238,7 @@ CourseRepository --> "Database (Lessons Table)" : "CRUD Operations"
 ```
 ![image](https://github.com/user-attachments/assets/f142a389-1f5a-4e76-a1be-c2753086a9a1)
 
-###3. Progress Tracker and Analytics
+### 3. Progress Tracker and Analytics
 This component tracks user progress in lessons.
 ```
 @startuml
@@ -274,7 +274,7 @@ ProgressRepository --> "Database (Progress Table)" : "Stores Progress"
 ![image](https://github.com/user-attachments/assets/1ad5810e-eced-4815-b444-515227a90ec8)
 
 
-###4. Leaderboard and Statistics
+### 4. Leaderboard and Statistics
 This component displays and manages the leaderboard.
 ```
 @startuml
@@ -307,7 +307,7 @@ LeaderboardRepository --> "Database (Progress Table)" : "Stores Score Data"
 ```
 ![image](https://github.com/user-attachments/assets/dd2051f4-352c-4ea0-968f-b3c9994da8d7)
 
-###5. In-Game Chat and Social Interaction
+### 5. In-Game Chat and Social Interaction
 This component handles in-game communication between players.
 ```
 @startuml
@@ -342,7 +342,7 @@ ChatRepository --> "Database (Messages Table)" : "Stores Messages"
 ```
 ![image](https://github.com/user-attachments/assets/d77fb0b8-85a2-40f5-8f98-7c912a4d467b)
 
-###6. Admin Panel Components
+### 6. Admin Panel Components
 #### 6.1 User Management
 ```
 @startuml
