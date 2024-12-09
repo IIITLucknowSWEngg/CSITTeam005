@@ -32,9 +32,7 @@ This document defines the user requirements for the Duolingo project. It outline
 
 ---
 
-## Stakeholder Requirements
-
-# Stakeholder Use Cases, Requirements, and Expectations
+## Stakeholder Use Cases, Requirements, and Expectations
 
 ## 1. Project Team
 
