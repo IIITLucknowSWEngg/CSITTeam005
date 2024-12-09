@@ -4,85 +4,120 @@ This document outlines the key stakeholders involved in the Duolingo project. St
 
 ---
 
-## Project Team
+## Stakeholder Groups
+
+### 1. Project Team
 
 | Key Stakeholders             | Role                                                          | Responsibilities                                                                    | Impact                                                              | Qualifications                                                     |
-|-----------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------|
-| The Development Team              | Responsible for coding, testing, and implementing the platform.   | - Developing and maintaining the Duolingo application.<br>- Implementing new features and updates.<br>- Conducting thorough testing to ensure a high-quality user experience. | Drive innovation and ensure technical quality of the platform.         | Experts in computer science and software development with experience in building scalable systems. |
-| Project Manager                   | Oversees project timeline and execution.                          | - Managing project tasks and assignments.<br>- Ensuring adherence to schedule and scope.<br>- Main contact for project-related communication and coordination. | Ensure successful delivery of the project within time and scope.       | Experienced in project management, skilled in agile methodologies and tools. |
+|-------------------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------|
+| The Development Team          | Responsible for coding, testing, and implementing the platform. | - Developing and maintaining the Duolingo application.<br>- Implementing new features and updates.<br>- Conducting thorough testing to ensure a high-quality user experience. | Drive innovation and ensure technical quality of the platform.      | Experts in computer science and software development with experience in building scalable systems. |
+| Project Manager               | Oversees project timeline and execution.                     | - Managing project tasks and assignments.<br>- Ensuring adherence to schedule and scope.<br>- Main contact for project-related communication and coordination. | Ensure successful delivery of the project within time and scope.    | Experienced in project management, skilled in agile methodologies and tools. |
+| Content Moderators            | Monitor and moderate user-generated content on the platform. | - Reviewing flagged content for inappropriate behavior.<br>- Enforcing platform policies.<br>- Reporting on abuse incidents.<br>- Collaborating with developers on detecting abuse patterns. | Ensure a safe and respectful community environment on the platform. | Experience in online community moderation, familiarity with content guidelines and abuse prevention. |
+| Customer Support Team         | Assist users with troubleshooting and queries.               | - Responding to user queries and resolving platform-related issues.<br>- Handling account problems.<br>- Providing technical and customer support. | Enhance user satisfaction and retention through efficient support.  | Skilled in customer service and technical troubleshooting.         |
+| Data Analysts                 | Analyze platform data to derive insights.                   | - Generating reports.<br>- Interpreting user behavior.<br>- Recommending platform improvements. | Improve the learning experience and optimize platform performance.  | Experts in data analysis and statistics, with proficiency in analytics tools. |
+| Administrators                | Manage platform settings and user access.                   | - Performing administrative tasks.<br>- Managing user roles.<br>- Ensuring platform stability and security. | Maintain platform integrity and operational efficiency.             | Experienced in administrative management and IT operations.        |
 
 ---
 
-## Product Stakeholders
+### 2. Product Stakeholders
 
 | Key Stakeholders             | Role                                                          | Responsibilities                                                                    | Impact                                                              | Qualifications                                                     |
-|-----------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------|
-| Educational Institutions          | Schools and universities utilizing the platform.                  | - Integrating Duolingo into their curriculum.<br>- Providing feedback on educational effectiveness.<br>- Collaborating on research and development. | Contribute to the platform's educational credibility and adoption.     | Established institutions with expertise in pedagogy and curriculum design. |
-| **Content Moderators**        | Monitor and moderate user-generated content on the platform.   | - Reviewing flagged content for inappropriate behavior.<br>- Enforcing platform policies.<br>- Reporting on abuse incidents.<br>- Collaborating with developers on detecting abuse patterns. | Ensure a safe and respectful community environment on the platform.  | Experience in online community moderation, familiarity with content guidelines and abuse prevention. |
-| *Users*         |                                                                       |                                                                                                                  |                                                               |                                                                              |
-| Shreya Singh                  | Beginner Learner (Hindi Speaker)                                  | - Practicing basic English vocabulary.<br>- Engaging with beginner-level lessons and games. | Helps improve beginner-level engagement and content relevance. | Native Hindi speaker with a desire to improve English skills. |
-| Vishal Mane                 | Intermediate Learner (Marathi Speaker)                            | - Learning English grammar and conversation.<br>- Tracks daily progress and milestones. | Contributes to intermediate content development. | Intermediate level learner, fluent in Marathi and aiming to strengthen English proficiency. |
-| Geetanjali Gada                  | Advanced Learner (Gujarati Speaker)                               | - Engages in advanced English lessons, focusing on professional language skills.<br>- Reviews complex grammar and vocabulary. | Supports advanced content innovation and retention. | Native Gujarati speaker, working toward fluency for professional purposes. |
-| Vijay Chandrashekhar                    | Casual Learner (Telugu Speaker)                                    | - Learning English casually on weekends.<br>- Prefers short, engaging lessons over formal ones. | Helps develop content for casual learners and inform product design. | Native Telugu speaker with a focus on casual, enjoyable learning. |
+|-------------------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------|
+| Learners                     | Use the platform to learn languages.                        | - Engaging with lessons and games.<br>- Tracking progress and milestones.<br>- Providing feedback to improve user experience. | Core users driving platform engagement and content relevance.       | Diverse backgrounds and proficiency levels in language learning.   |
+| Language Experts             | Collaborate on content creation and review.                 | - Ensuring the accuracy and quality of language courses.<br>- Providing insights on language learning methodologies.<br>- Helping to localize content for different regions. | Improve the authenticity and effectiveness of language materials.   | Professionals with academic or native proficiency in multiple languages. |
+| Content Creators             | Use the platform to create language-related content.         | - Producing content such as tutorials and reviews.<br>- Promoting the platform through social media and other channels. | Increase visibility and user engagement through creative promotions. | Influencers and educators with a strong online presence and outreach. |
 
 ---
 
-## External Stakeholders
+### 3. External Stakeholders
 
 | Key Stakeholders             | Role                                                          | Responsibilities                                                                    | Impact                                                              | Qualifications                                                     |
-|-----------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------|
-| Investors or Sponsors             | Provide financial support.                           | - Offering funding or resources in exchange for revenue share or partnership benefits.<br>- Supporting marketing and expansion efforts. | Enable scalability and provide resources for expansion.                | Individuals or organizations with expertise in ed-tech investments and partnerships. |
-| Language Experts                  | Collaborate on content creation and review.                       | - Ensuring the accuracy and quality of language courses.<br>- Providing insights on language learning methodologies.<br>- Helping to localize content for different regions. | Improve the authenticity and effectiveness of language learning materials. | Professionals with academic or native proficiency in multiple languages. |
-| Content Creators                  | Use the platform for creating language-related content.           | - Producing content such as tutorials, reviews, and promotional materials.<br>- Promoting the platform through social media and other channels. | Increase visibility and user engagement through creative promotions.   | Influencers and educators with a strong online presence and outreach.  |
-| Developers Community              | Contribute to open-source enhancements.                           | - Providing code enhancements, bug fixes, and feedback.<br>- Engaging with the community for collaborative development. | Support platform innovation and improve code quality through collaboration. | Skilled developers passionate about contributing to ed-tech solutions. |
+|-------------------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------|
+| Educational Institutions      | Schools and universities utilizing the platform.             | - Integrating Duolingo into their curriculum.<br>- Providing feedback on educational effectiveness.<br>- Collaborating on research and development. | Contribute to the platform's educational credibility and adoption. | Established institutions with expertise in pedagogy and curriculum design. |
+| Investors or Sponsors         | Provide financial support.                                   | - Offering funding or resources in exchange for revenue share or partnership benefits.<br>- Supporting marketing and expansion efforts. | Enable scalability and provide resources for expansion.            | Individuals or organizations with expertise in ed-tech investments and partnerships. |
+| Developers Community          | Contribute to open-source enhancements.                     | - Providing code enhancements, bug fixes, and feedback.<br>- Engaging with the community for collaborative development. | Support platform innovation and improve code quality.              | Skilled developers passionate about contributing to ed-tech solutions. |
 
 ---
 
-## Regulatory Stakeholders
+### 4. Regulatory Stakeholders
 
 | Key Stakeholders             | Role                                                          | Responsibilities                                                                    | Impact                                                              | Qualifications                                                     |
-|-----------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------|
-| Data Privacy and Security Authorities | Ensure compliance with data privacy laws.                        | - Overseeing adherence to global/regional data privacy regulations (e.g., GDPR).<br>- Ensuring the security and privacy of user data. | Ensure legal compliance and build user trust by protecting data.        | Accredited agencies specializing in data protection and privacy laws.  |
-| Language Regulatory Bodies        | Standardize language learning content.                            | - Monitoring adherence to language guidelines and norms.<br>- Ensuring that courses align with recognized language standards.<br>- Validating the accuracy of language content. | Enhance credibility and maintain high linguistic standards.            | Renowned institutions or boards specializing in language regulation and education. |
+|-------------------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------|
+| Data Privacy and Security Authorities | Ensure compliance with data privacy laws.                  | - Overseeing adherence to global/regional data privacy regulations (e.g., GDPR).<br>- Ensuring the security and privacy of user data. | Ensure legal compliance and build user trust by protecting data.   | Accredited agencies specializing in data protection and privacy laws. |
+| Language Regulatory Bodies   | Standardize language learning content.                        | - Monitoring adherence to language guidelines and norms.<br>- Ensuring that courses align with recognized language standards.<br>- Validating the accuracy of language content. | Enhance credibility and maintain high linguistic standards.         | Renowned institutions or boards specializing in language regulation and education. |
 
 ---
 
-## Production Login Users
+## User Personas
 
-The following stakeholders require login access to the platform to perform their respective roles effectively:
+To better understand the diverse learner base, refer to the following user personas:  
+1. [Beginner Learners: Shreya Singh](../Assignment1/Personas.md#beginner-learner-persona)  
+2. [Intermediate Learners: Vishal Mane](../Assignment1/Personas.md#intermediate-learner-persona)   
+3. [Advanced Learners: Geetanjali Gada](../Assignment1/Personas.md#advanced-learner-persona)  
+4. [Casual Learners: Vijay Chandrashekhar](../Assignment1/Personas.md#casual-learner-persona)  
 
-1. **Development Team**  
-   - **Purpose:** Access administrative dashboards, manage production environments, and conduct testing in a live setting.  
-   - **Usage:** Overseeing technical infrastructure, implementing features, and resolving production-level issues.  
+---
 
-2. **Content Moderators**  
-   - **Purpose:** Ensure compliance with platform policies and maintain a safe user environment.  
-   - **Usage:** Reviewing flagged content, moderating user behavior, and generating reports on community standards violations.  
+### Production Login Users
 
-3. **Learners (Shreya Singh, Vishal Mane, Geetanjali Gada, Vijay Chandrashekhar)**  
-   - **Purpose:** Personalize their learning experience and track progress.  
-   - **Usage:** Accessing lessons, saving progress, unlocking achievements, and customizing their learning journey.  
+The following stakeholders require login access to the platform to perform their respective roles effectively:  
 
-4. **Language Experts**  
-   - **Purpose:** Curate and maintain the accuracy of language-learning content.  
-   - **Usage:** Reviewing, creating, and localizing content within the platform's content management system.  
+| **Stakeholder**      | **Degree of Privilege**                      | **Rights and Access**                                                                                  |
+|-----------------------|---------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| **Development Team**  | High                                        | - Access to production environments.<br>- Manage server settings and infrastructure.<br>- Resolve technical issues and deploy updates. |
+| **Content Moderators**| Limited to content moderation tools         | - Review and act on flagged content.<br>- Enforce community guidelines.<br>- Report abuse incidents.<br>- No access to sensitive user data or server configurations. |
+| **Learners**          | User-level                                  | - Access lessons, progress tracking, and achievements.<br>- Save and retrieve personal learning data.<br>- Customize learning preferences. |
+| **Language Experts**  | Limited to content management tools         | - Curate, create, and localize language-learning content.<br>- Review and update existing lessons.<br>- No access to administrative or user data. |
+| **Content Creators**  | Limited to promotional content tools        | - Upload and manage tutorials or promotional materials.<br>- Track performance of their contributions.<br>- No access to other users’ data or core application settings. |
+| **Customer Support Team** | Moderate                                 | - Access to user accounts for troubleshooting.<br>- View platform logs for issue resolution.<br>- Restricted from accessing financial data or sensitive personal information. |
+| **Marketing Team**    | Moderate                                    | - Access analytics dashboards for campaign performance.<br>- Manage user engagement and acquisition strategies.<br>- No access to user-specific personal data. |
+| **Data Analysts**     | Moderate                                    | - Generate and view aggregate reports.<br>- Analyze platform usage trends and user behavior.<br>- No ability to modify platform content or settings. |
+| **Administrators**    | Highest                                     | - Manage platform settings and configurations.<br>- Assign or revoke user roles.<br>- Oversee security, data protection, and overall operations.<br>- Access all application areas, including sensitive user and system data. |
 
-5. **Content Creators**  
-   - **Purpose:** Produce and manage language-related materials that enhance user engagement.  
-   - **Usage:** Uploading tutorials, creating promotional materials, and monitoring the reach of their contributions.  
 
-6. **Customer Support Team**  
-   - **Purpose:** Assist users with troubleshooting, queries, and platform-related issues.  
-   - **Usage:** Responding to user queries, handling account-related issues, and providing technical support.
+---
 
-7. **Marketing Team**  
-   - **Purpose:** Manage promotional campaigns and user acquisition efforts.  
-   - **Usage:** Accessing analytics, tracking campaign performance, and optimizing user engagement strategies.
+# Stakeholder Map
 
-8. **Data Analysts**  
-   - **Purpose:** Analyze platform data to derive insights and optimize the learning experience.  
-   - **Usage:** Generating reports, interpreting user behavior, and providing recommendations for platform improvements.
+## Visual Representation
 
-9. **Administrators**  
-   - **Purpose:** Manage overall platform settings, user access permissions, and oversee high-level operational functions.  
-   - **Usage:** Performing administrative tasks, managing user roles, and ensuring platform stability and security.
+![Stakeholder Map](./images/stakeholder-map.png)
+
+## PlantUML Source
+
+```plantuml
+@startuml StakeholderMap
+
+actor "Learners" as Learners
+actor "Language Experts" as LanguageExperts
+actor "Content Creators" as ContentCreators
+actor "Educational Institutions" as EduInstitutions
+actor "Investors or Sponsors" as Investors
+actor "Developers Community" as DevCommunity
+actor "Data Privacy Authorities" as PrivacyAuthorities
+actor "Language Regulatory Bodies" as RegulatoryBodies
+
+package "Project Team" {
+  actor "Development Team" as DevTeam
+  actor "Project Manager" as ProjectManager
+  actor "Content Moderators" as Moderators
+  actor "Customer Support Team" as SupportTeam
+  actor "Data Analysts" as DataAnalysts
+  actor "Administrators" as Admins
+}
+
+Learners --> Moderators : Report Content
+Learners --> SupportTeam : Request Support
+Learners --> DataAnalysts : Provide Usage Data
+LanguageExperts --> DevTeam : Collaborate on Content
+LanguageExperts --> Admins : Update Course Materials
+ContentCreators --> Admins : Upload Promotional Content
+EduInstitutions --> ProjectManager : Feedback
+EduInstitutions --> DataAnalysts : Request Reports
+Investors --> ProjectManager : Provide Funding
+DevCommunity --> DevTeam : Code Contributions
+PrivacyAuthorities --> Admins : Ensure Compliance
+RegulatoryBodies --> LanguageExperts : Validate Standards
+RegulatoryBodies --> DevTeam : Validate Course Content
+
+@enduml
