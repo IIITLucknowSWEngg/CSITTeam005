@@ -94,7 +94,10 @@ Each module is further broken into submodules. For instance:
 - Leaderboard Updates
 
 #### Diagram: 
-- A simple flowchart showing the interaction between these components would go here.
+- A simple flowchart showing the interaction between these components:
+  
+![image](https://github.com/user-attachments/assets/cebf928d-8a20-4a38-b727-b71de858dfb0)
+
 
 ### 3.3 Design Rationale
 The modular design ensures scalability, maintainability, and flexibility. For example, the speech recognition engine can be updated independently without affecting other components. This modularity is crucial for a large-scale system like Duolingo, which supports millions of users.
