@@ -103,6 +103,7 @@ Each module is further broken into submodules. For instance:
 The modular design ensures scalability, maintainability, and flexibility. For example, the speech recognition engine can be updated independently without affecting other components. This modularity is crucial for a large-scale system like Duolingo, which supports millions of users.
 
 ## 4. Data Design
+
 ### 4.1 Data Description
 Duolingo organizes its data into three major categories:
 - *User Data* - Includes personal details, progress, and achievements.
@@ -110,12 +111,14 @@ Duolingo organizes its data into three major categories:
 - *Gamification Data* - Tracks points, streaks, and leaderboard positions.
   
 ### 4.2 Data Dictionary
+
 ![image](https://github.com/user-attachments/assets/30cfe2db-ac48-4a55-a1a9-92eba77eb513)
 
 ## 5. Component Design
 
 ### 5.1 Gamification Engine
 Algorithm to Calculate Streaks:
+
 ![image](https://github.com/user-attachments/assets/ce3db62f-d12e-42fb-a4cb-be6f42c772d0)
 
 ## 6. Human Interface Design
@@ -136,35 +139,49 @@ The following are key screens in the application:
 
 ### 6.3 Screen Objects and Actions
 
-#### Login Page
+### Login Page
+
 ![image](https://github.com/user-attachments/assets/348ddd9c-210e-420f-b50f-92939873be6b)
 
-- Image of Login Page :-
+
+- **Image of Login Page** :-
+  
 ![image](https://github.com/user-attachments/assets/aa54a33d-e7be-4379-bffa-3778dbca5fe3)
 
-#### Dashboard
+
+### Dashboard
+
 ![image](https://github.com/user-attachments/assets/05b0fc77-e0fd-40c4-9de8-6623095930ae)
 
-- Image of Dashboard :-
+
+- **Image of Dashboard** :-
+  
 ![image](https://github.com/user-attachments/assets/2f6995ce-bb74-46e7-b923-6133c3bbc616)
 
-#### Lesson Screen
+
+### Lesson Screen
+
 ![image](https://github.com/user-attachments/assets/b1ef7bed-f7f3-48e9-9e50-01d90103226d)
 
-- Image of Lesson Screen :- 
+
+- **Image of Lesson Screen** :-
+  
 ![image](https://github.com/user-attachments/assets/3e12e6d4-07f3-4b75-b8f9-c853f5c09af0)
 
-#### Progress Tracker
+
+### Progress Tracker
+
 ![image](https://github.com/user-attachments/assets/e09e65f3-3136-4c2b-bef1-49c9591da53f)
 
-- Image of Progress Tracker:- 
+
+- **Image of Progress Tracker**:-
+  
 ![image](https://github.com/user-attachments/assets/b473fbab-a94b-42c5-a913-cc6ddb343561)
 
 
 
-
-
 ## Requirements Matrix
+
 ![image](https://github.com/user-attachments/assets/db1adaaf-2ac2-43a2-8bec-737116b71935)
 
 
