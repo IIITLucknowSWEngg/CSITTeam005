@@ -122,7 +122,100 @@ Duolingo is a gamified and adaptive language learning platform available on mobi
 - Content creator posts inappropriate content or user spams forums; the system automatically flags content for review and applies penalties if necessary.  
 
 #### Error Path  
-- Group activity fails to load due to a server issue; the system notifies the user and provides a fallback option.  
+- Group activity fails to load due to a server issue; the system notifies the user and provides a fallback option.
+
+### 6.4 Use Case 4: Participation in Lessons  
+
+#### Happy Path  
+- User selects a lesson and successfully participates, completing tasks and earning points.  
+- Progress is saved automatically, and the user sees feedback on performance.
+
+#### Abuse Path  
+- User tries to complete lessons in an unexpected way, such as spamming answers or using external tools to cheat.  
+- System detects abnormal activity (e.g., unusually fast completion times) and flags the user's progress for review.
+
+#### Error Path  
+- The system encounters a technical error preventing lesson load.  
+- User is informed of the issue and given an option to retry or continue with another lesson.
+
+---
+
+### 6.5 Use Case 5: Leaderboard Participation  
+
+#### Happy Path  
+- User’s performance in lessons and challenges is tracked, and they are ranked appropriately on the leaderboard.  
+- User can see their progress and compare it with other learners.
+
+#### Abuse Path  
+- User attempts to manipulate or falsify progress to gain an unfair advantage on the leaderboard (e.g., using bots to complete lessons).  
+- System detects suspicious patterns and automatically flags the account, initiating a review process.
+
+#### Error Path  
+- Server issues cause the leaderboard to fail to load.  
+- The system alerts the user to the problem and provides a fallback, such as displaying cached leaderboard data or retrying after some time.
+
+---
+
+### 6.6 Use Case 6: Account Login  
+
+#### Happy Path  
+- User enters valid credentials (email/password or social login) and successfully logs into the platform.  
+- System recognizes previous progress and displays relevant lessons.
+
+#### Abuse Path  
+- User enters incorrect login credentials multiple times, triggering the account lockout after several failed attempts.  
+- The system provides a CAPTCHA or additional verification steps to prevent brute-force attacks.
+
+#### Error Path  
+- The system is unable to connect to the authentication service, causing login failure.  
+- User is notified and provided with an option to try again or use an alternative login method (e.g., social login).
+
+### 6.8 Use Case 8: Lesson Progress Tracking  
+
+#### Happy Path  
+- User successfully completes a lesson, and their progress is automatically updated in real-time across devices.  
+- User is notified of new achievements, such as earning XP or reaching a milestone.
+
+#### Abuse Path  
+- User attempts to manipulate progress data using external tools or scripts.  
+- The system detects abnormal activity (e.g., skipping questions or automated answers) and invalidates the progress, logging the event for review.
+
+#### Error Path  
+- Connectivity issues prevent progress from being saved.  
+- The system queues the data for upload and notifies the user once the connection is restored.
+
+---
+
+### 6.9 Use Case 9: Social Features and Friend Interaction  
+
+#### Happy Path  
+- User sends a friend request, which is accepted, and they can now track each other’s progress and engage in challenges together.  
+- User participates in group challenges and sees real-time updates from friends.
+- 
+#### Abuse Path  
+- User attempts to manipulate the social features by creating multiple fake accounts to inflate their friend count or progress.  
+- The system detects unusual patterns of account creation and interaction, temporarily suspending the user’s ability to send friend requests or participate in challenges until a review is completed.
+
+#### Error Path  
+- The system experiences a delay in sending or receiving friend requests.  
+- The user is notified of the issue and given an option to retry.
+
+---
+
+### 6.10 Use Case 10: User Feedback and Rating  
+
+#### Happy Path  
+- User provides feedback or rates a lesson, contributing to continuous content improvement.  
+- Feedback is collected and presented to relevant teams for review.
+
+#### Abuse Path  
+- User attempts to spam or provide fake reviews to manipulate content ratings.  
+- The system uses pattern recognition to flag suspicious feedback and may prompt the user for additional verification.
+
+#### Error Path  
+- Feedback submission fails due to a server or connectivity issue.  
+- The user is notified of the issue and given an option to retry or submit feedback later.
+
 
 ---
 
