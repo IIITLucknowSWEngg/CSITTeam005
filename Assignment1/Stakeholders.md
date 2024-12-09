@@ -81,7 +81,8 @@ The following stakeholders require login access to the platform to perform their
 
 ## Visual Representation
 
-![Stakeholder Map](./images/stakeholder-map.png)
+![image](https://github.com/user-attachments/assets/274424ef-9398-43cb-9513-f1c03456a607)
+
 
 ## PlantUML Source
 
