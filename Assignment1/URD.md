@@ -1,42 +1,41 @@
-
 # User Requirements Document (URD) for Duolingo Project
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Stakeholder Requirements](#stakeholder-requirements)
-  - [1. Project Team](#1-project-team)
-    - [Development Team](#development-team)
-    - [Project Manager](#project-manager)
-    - [Content Moderators](#content-moderators)
-    - [Customer Support Team](#customer-support-team)
-    - [Data Analysts](#data-analysts)
-    - [Administrators](#administrators)
-  - [2. Product Stakeholders](#2-product-stakeholders)
-    - [Users](#users)
-    - [Language Experts](#language-experts)
-    - [Content Creators](#content-creators)
-  - [3. External Stakeholders](#3-external-stakeholders)
-    - [Educational Institutions](#educational-institutions)
-    - [Investors or Sponsors](#investors-or-sponsors)
-    - [Developers Community](#developers-community)
-  - [4. Regulatory Stakeholders](#4-regulatory-stakeholders)
-    - [Data Privacy and Security Authorities](#data-privacy-and-security-authorities)
-    - [Language Regulatory Bodies](#language-regulatory-bodies)
-- [Conclusion](#conclusion)
+- [1. Introduction](#1-introduction)
+- [2. Stakeholder Requirements](#2-stakeholder-requirements)
+  - [2.1 Project Team](#21-project-team)
+    - [2.1.1 Development Team](#211-development-team)
+    - [2.1.2 Project Manager](#212-project-manager)
+    - [2.1.3 Content Moderators](#213-content-moderators)
+    - [2.1.4 Customer Support Team](#214-customer-support-team)
+    - [2.1.5 Data Analysts](#215-data-analysts)
+    - [2.1.6 Administrators](#216-administrators)
+  - [2.2 Product Stakeholders](#22-product-stakeholders)
+    - [2.2.1 Users](#221-users)
+    - [2.2.2 Language Experts](#222-language-experts)
+    - [2.2.3 Educational Content Developers](#223-educational-content-developers)
+  - [2.3 External Stakeholders](#23-external-stakeholders)
+    - [2.3.1 Educational Institutions](#231-educational-institutions)
+    - [2.3.2 Investors or Sponsors](#232-investors-or-sponsors)
+    - [2.3.3 Developers Community](#233-developers-community)
+  - [2.4 Regulatory Stakeholders](#24-regulatory-stakeholders)
+    - [2.4.1 Data Privacy and Security Authorities](#241-data-privacy-and-security-authorities)
+    - [2.4.2 Language Regulatory Bodies](#242-language-regulatory-bodies)
+- [3. Conclusion](#3-conclusion)
 ---
 
-## Introduction
+## 1. Introduction
 
 This document defines the user requirements for the Duolingo project. It outlines the expectations and needs of all key stakeholders, including the project team, product stakeholders, external stakeholders, and regulatory stakeholders. Additionally, specific user requirements are provided for individual production login users.
 
 ---
 
-## Stakeholder Use Cases, Requirements, and Expectations
+## 2. Stakeholder Requirements
 
-## 1. Project Team
+### 2.1 Project Team
 
-### Development Team
+#### 2.1.1 Development Team
 **Use Cases:**
 - **Create and Maintain the App:**
   - I develop features and functionalities according to project requirements.
@@ -53,7 +52,7 @@ This document defines the user requirements for the Duolingo project. It outline
 - I expect a collaborative environment where I can communicate any technical issues and receive prompt support.
 - I expect to have sufficient time and resources for thorough testing and deployment of updates.
 
-### Project Manager
+#### 2.1.2 Project Manager
 **Use Cases:**
 - **Track Project Progress:**
   - I monitor the development timeline to ensure that the project stays on track.
@@ -70,7 +69,7 @@ This document defines the user requirements for the Duolingo project. It outline
 - I expect a proactive approach to problem-solving and early identification of any roadblocks.
 - I expect the development team to adhere to project timelines and deliverables.
 
-### Content Moderators
+#### 2.1.3 Content Moderators
 **Use Cases:**
 - **Review User-Generated Content:**
   - I review and flag inappropriate content submitted by users.
@@ -86,7 +85,7 @@ This document defines the user requirements for the Duolingo project. It outline
 - I expect timely responses and updates to flagged content to ensure prompt action is taken.
 - I expect to receive regular training on content moderation practices and emerging trends in content abuse.
 
-### Customer Support Team
+#### 2.1.4 Customer Support Team
 **Use Cases:**
 - **Resolve User Queries:**
   - I provide assistance to users experiencing technical or account-related issues.
@@ -103,7 +102,7 @@ This document defines the user requirements for the Duolingo project. It outline
 - I expect quick access to relevant resources, including FAQs and troubleshooting guides.
 - I expect the ability to escalate complex issues to higher support levels or development teams as needed.
 
-### Data Analysts
+#### 2.1.5 Data Analysts
 **Use Cases:**
 - **Analyze User Data:**
   - I generate reports on app usage, user engagement, and retention to identify patterns.
@@ -120,7 +119,7 @@ This document defines the user requirements for the Duolingo project. It outline
 - I expect to receive a clear understanding of the app’s performance goals and key metrics.
 - I expect a feedback loop from the development and marketing teams to see how my insights influence decisions.
 
-### Administrators
+#### 2.1.6 Administrators
 **Use Cases:**
 - **Manage User Access:**
   - I assign roles and permissions to users based on their responsibilities.
@@ -137,12 +136,11 @@ This document defines the user requirements for the Duolingo project. It outline
 - I expect a well-defined access control system to minimize security risks.
 - I expect the system to be easy to manage with minimal disruption to users.
 
-## 2. Product Stakeholders
+### 2.2 Product Stakeholders
 
-### Users
-
-### 1. Tracking Progress
-### **Use Cases:**
+#### 2.2.1 Users
+##### 2.2.1.1 Tracking Progress
+**Use Cases:**
 - **View Learning Milestones:**
   - I track my overall progress in the app through visual indicators like badges or progress bars.
 - **Monitor Skill Growth:**
@@ -150,18 +148,16 @@ This document defines the user requirements for the Duolingo project. It outline
 - **Review Completed Lessons:**
   - I revisit past lessons to assess how much I've learned and which areas I need to work on.
 
-### **Requirements:**
+**Requirements:**
 - I need clear progress indicators (e.g., percentage of lessons completed, skill levels).
 - I need periodic updates on my performance to keep track of improvements.
 
-### **Expectations:**
+**Expectations:**
 - I expect the app to provide accurate tracking that motivates me to continue learning.
 - I expect easy access to a summary of my progress at any time.
 
----
-
-### 2. Participating in Lessons
-### **Use Cases:**
+##### 2.2.1.2 Participating in Lessons
+**Use Cases:**
 - **Complete Lessons and Exercises:**
   - I engage with lessons to improve my vocabulary, grammar, and language skills.
 - **Participate in Practice Activities:**
@@ -169,18 +165,16 @@ This document defines the user requirements for the Duolingo project. It outline
 - **Get Real-Time Feedback:**
   - I receive immediate feedback on my answers to understand mistakes and learn the correct solutions.
 
-### **Requirements:**
+**Requirements:**
 - I need lessons tailored to my current skill level and learning pace.
 - I need engaging and interactive exercises to stay motivated.
 
-### **Expectations:**
+**Expectations:**
 - I expect lessons that build on each other to gradually increase my proficiency.
 - I expect a variety of activities to keep the learning process interesting and dynamic.
 
----
-
-### 3. Monitoring Friend Activity
-### **Use Cases:**
+##### 2.2.1.3 Monitoring Friend Activity
+**Use Cases:**
 - **Track Friends' Progress:**
   - I see how my friends are progressing in their language learning and compare our milestones.
 - **Challenge Friends:**
@@ -188,53 +182,54 @@ This document defines the user requirements for the Duolingo project. It outline
 - **View Friend Rankings:**
   - I can check rankings or leaderboards to see where I stand in comparison to friends.
 
-### **Requirements:**
+**Requirements:**
 - I need access to friends' progress data and achievements to compare with mine.
 - I need options to send and receive challenges from friends.
 
-### **Expectations:**
+**Expectations:**
 - I expect social features that motivate me through friendly competition.
 - I expect privacy controls to manage which friends can see my progress and vice versa.
 
----
-
-### Language Experts
+#### 2.2.2 Language Experts
 **Use Cases:**
 - **Create and Curate Language Content:**
-  - I develop, review, and maintain language lessons to ensure they are educational and accurate.
+  - I plan, review, and maintain language lessons to ensure they are educational and accurate.
   - I localize content for different regions and languages to make it more accessible.
 - **Ensure Course Accuracy:**
   - I ensure the content meets educational standards and is culturally appropriate.
-  - I update courses based on user feedback and linguistic research to keep them relevant.
+  - I provide course feedback based on user reviews and linguistic research to keep them relevant.
 
 **Requirements:**
-- I need detailed guidelines on course content, including language rules and cultural nuances.
 - I need access to feedback from learners to improve and refine the courses.
 
 **Expectations:**
 - I expect the content to be reviewed and updated regularly based on learner feedback and evolving language standards.
 - I expect support from the development team for the technical aspects of content delivery.
 
-### Content Creators
+#### 2.2.3 Educational Content Developers
 **Use Cases:**
-- **Create Language-Related Content:**
-  - I develop tutorials, instructional videos, and learning materials to enhance the learning experience.
-  - I promote the app on social media and other platforms to increase its visibility.
-- **Monitor Content Performance:**
-  - I track engagement with the content I produce to measure its effectiveness.
-  - I update content based on user feedback and analytics to ensure it remains relevant and useful.
+- **Create Language-Related Educational Content:**
+  - I design tutorials, instructional videos, learning materials, and exercises to enhance the language learning experience.
+  - I work closely with language experts to ensure that all content is accurate, culturally appropriate, and educationally effective.
+- **Update and Maintain Content:**
+  - I periodically revise content based on user feedback, research findings, and educational trends to keep it relevant.
+  - I create supplementary materials and learning aids to support different learning styles and enhance the overall experience.
 
 **Requirements:**
-- I need a platform to upload and manage the content I create.
-- I need access to data and feedback on how my content is performing with learners.
+- I need a user-friendly platform to upload, organize, and manage the educational content I create.
+- I need access to expert feedback, engagement data, and performance analytics to refine content.
+- I need guidelines and templates for creating content to ensure consistency and alignment with educational goals.
+- I need access to collaboration tools to work with language experts, instructional designers, and other stakeholders.
 
 **Expectations:**
-- I expect clear guidelines on content creation to ensure consistency and quality.
-- I expect regular updates on user engagement and feedback to improve the content I produce.
+- I expect the platform to provide robust tools for content creation, revision, and distribution.
+- I expect to receive timely updates on content performance, user engagement, and feedback to refine the content.
+- I expect clear, detailed guidelines for content creation to ensure high-quality and consistent educational materials.
+- I expect regular communication with other stakeholders to ensure the content meets the needs of learners and aligns with the app’s educational vision.
 
-## 3. External Stakeholders
+### 2.3 External Stakeholders
 
-### Educational Institutions
+#### 2.3.1 Educational Institutions
 **Use Cases:**
 - **Integrate the App into the Curriculum:**
   - I use Duolingo as a supplemental tool for language learning in schools and universities.
@@ -251,7 +246,7 @@ This document defines the user requirements for the Duolingo project. It outline
 - I expect regular updates and support to ensure smooth integration into the curriculum.
 - I expect to see improvements in educational features based on research findings and feedback.
 
-### Investors or Sponsors
+#### 2.3.2 Investors or Sponsors
 **Use Cases:**
 - **Provide Financial Support:**
   - I offer funding to support the development, marketing, and scaling of the app.
@@ -265,63 +260,57 @@ This document defines the user requirements for the Duolingo project. It outline
 - I require clear communication about the app’s strategic direction and market performance.
 
 **Expectations:**
-- I expect a clear return on investment (ROI) from my financial support.
-- I expect Duolingo to scale effectively and meet its market expansion goals.
+- I expect a clear return on investment (ROI) through increased user adoption and financial performance.
+- I expect to be informed regularly about key milestones and challenges in the app’s development.
 
-### Developers Community
+#### 2.3.3 Developers Community
 **Use Cases:**
-- **Contribute to the Project:**
-  - I provide code enhancements, bug fixes, and new feature suggestions to improve the app.
-  - I collaborate with Duolingo’s development team to enhance the app’s infrastructure.
-- **Engage in Community Development:**
-  - I participate in forums or events to promote Duolingo’s development.
-  - I review and contribute to community-driven improvements to make the app more effective.
+- **Collaborate on Feature Development:**
+  - I contribute to the app by adding features, plugins, or enhancements that improve the user experience.
+  - I share code improvements, bug fixes, and performance enhancements with the core development team.
+- **Help with Localization and Internationalization:**
+  - I assist in translating and localizing the app to reach a broader global audience.
+  - I ensure that app content works seamlessly in different languages and regions.
 
 **Requirements:**
-- I need clear documentation and guidelines to contribute effectively to open-source projects.
-- I need communication channels to collaborate with the Duolingo team and other developers.
+- I need access to the app's source code and collaboration tools for contributing and submitting improvements.
+- I need feedback on my contributions to ensure they meet quality standards.
 
 **Expectations:**
-- I expect recognition for my contributions and the opportunity to collaborate on meaningful projects.
-- I expect timely feedback on contributions and open lines of communication.
+- I expect to work within an open-source or collaborative framework that encourages community involvement.
+- I expect recognition for contributions and acknowledgment in the app’s changelog or update notes.
 
-## 4. Regulatory Stakeholders
+### 2.4 Regulatory Stakeholders
 
-### Data Privacy and Security Authorities
+#### 2.4.1 Data Privacy and Security Authorities
 **Use Cases:**
-- **Ensure Compliance with Data Protection Laws:**
-  - I oversee adherence to GDPR and other data privacy regulations to protect user data.
-  - I conduct audits to ensure that user data is handled securely and ethically.
-- **Monitor Security Practices:**
-  - I review security protocols and recommend improvements to ensure data security.
-  - I ensure the app is resistant to data breaches and cyber threats through ongoing security measures.
+- **Ensure Data Protection Compliance:**
+  - I verify that the app complies with data protection laws (e.g., GDPR, CCPA) and follows best practices for user privacy.
+- **Audit and Enforce Security Standards:**
+  - I conduct audits to assess the app’s security protocols and ensure the platform safeguards user data.
 
 **Requirements:**
-- I need access to user data policies and security measures implemented by the app.
-- I require regular audits and reports to ensure compliance with privacy laws.
+- I need regular reports on the app's data processing practices and security measures.
+- I require transparency about how user data is collected, stored, and used.
 
 **Expectations:**
-- I expect the app to adhere to all relevant data protection laws and best security practices.
-- I expect cooperation from the app’s development team in maintaining a secure and compliant environment.
+- I expect the app to adhere to all applicable data privacy and security laws.
+- I expect proactive steps to address security vulnerabilities and mitigate risks to user data.
 
-### Language Regulatory Bodies
+#### 2.4.2 Language Regulatory Bodies
 **Use Cases:**
-- **Validate Language Content:**
-  - I ensure that language courses meet regional linguistic standards and guidelines.
-  - I review and approve course materials to ensure they align with language learning guidelines.
-- **Ensure Accuracy and Quality:**
-  - I conduct audits to ensure content accuracy and proper use of language rules.
-  - I provide feedback on how language materials could be improved or modified to meet educational standards.
-
+- **Ensure Language Standards:**
+  - I review the app’s language content to ensure it meets regulatory and cultural standards.
+  - I assess whether the app's language curriculum follows official guidelines or accepted practices.
+  
 **Requirements:**
-- I need access to the app’s language content to review its quality and adherence to standards.
-- I need collaboration with language experts to ensure the content meets regulatory guidelines.
-
+- I need access to content and curriculum materials to assess for regulatory compliance.
+  
 **Expectations:**
-- I expect high-quality content that meets regional linguistic and educational standards.
-- I expect timely feedback and updates on content modifications to maintain accuracy.
+- I expect collaboration with language experts to maintain linguistic accuracy and cultural appropriateness in the app’s content.
 
+---
 
-## Conclusion
+## 3. Conclusion
 
-This document outlines the specific user requirements for various stakeholders involved in the Duolingo project. These requirements will guide the development and design of the platform to meet the needs of all stakeholders, ensuring a successful project outcome.
+This document has outlined the key stakeholder requirements for the Duolingo project. By understanding the needs and expectations of each group, the development team can ensure that the app provides value, fosters engagement, and meets both educational and regulatory standards.
