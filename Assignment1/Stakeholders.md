@@ -24,8 +24,8 @@ This document outlines the key stakeholders involved in the Duolingo project. St
 | Key Stakeholders             | Role                                                          | Responsibilities                                                                    | Impact                                                              | Qualifications                                                     |
 |-------------------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------|
 | Learners                     | Use the platform to learn languages.                        | - Engaging with lessons and games.<br>- Tracking progress and milestones.<br>- Providing feedback to improve user experience. | Core users driving platform engagement and content relevance.       | Diverse backgrounds and proficiency levels in language learning.   |
-| Language Experts             | Collaborate on content creation and review.                 | - Ensuring the accuracy and quality of language courses.<br>- Providing insights on language learning methodologies.<br>- Helping to localize content for different regions. | Improve the authenticity and effectiveness of language materials.   | Professionals with academic or native proficiency in multiple languages. |
-| Content Creators             | Use the platform to create language-related content.         | - Producing content such as tutorials and reviews.<br>- Promoting the platform through social media and other channels. | Increase visibility and user engagement through creative promotions. | Influencers and educators with a strong online presence and outreach. |
+| Language Experts             | Plan and review course structures and content.               | - Designing course plans and identifying improvement areas.<br>- Reporting necessary changes to Educational Content Developers.<br>- Ensuring cultural and linguistic accuracy in courses. | Enhance the structure and authenticity of language-learning courses. | Professionals with academic or native proficiency in multiple languages. |
+| Educational Content Developers | Develop and modify course materials.                        | - Creating and updating educational content.<br>- Incorporating feedback from Language Experts.<br>- Ensuring consistency and engagement in course delivery. | Improve the quality and effectiveness of language-learning materials. | Educators, linguists, or instructional designers with expertise in content development. |
 
 ---
 
@@ -67,8 +67,8 @@ The following stakeholders require login access to the platform to perform their
 | **Development Team**  | High                                        | - Access to production environments.<br>- Manage server settings and infrastructure.<br>- Resolve technical issues and deploy updates. |
 | **Content Moderators**| Limited to content moderation tools         | - Review and act on flagged content.<br>- Enforce community guidelines.<br>- Report abuse incidents.<br>- No access to sensitive user data or server configurations. |
 | **Learners**          | User-level                                  | - Access lessons, progress tracking, and achievements.<br>- Save and retrieve personal learning data.<br>- Customize learning preferences. |
-| **Language Experts**  | Limited to content management tools         | - Curate, create, and localize language-learning content.<br>- Review and update existing lessons.<br>- No access to administrative or user data. |
-| **Content Creators**  | Limited to promotional content tools        | - Upload and manage tutorials or promotional materials.<br>- Track performance of their contributions.<br>- No access to other users’ data or core application settings. |
+| **Language Experts**           | Limited to planning and review tools          | - Design course structures and recommend improvements.<br>- Identify and report issues to Educational Content Developers.<br>- Ensure cultural and linguistic accuracy in courses.<br>- No access to content modification or administrative tools. |
+| **Educational Content Developers** | Full access to content creation tools         | - Develop, modify, and localize course content.<br>- Implement feedback from Language Experts.<br>- Ensure consistency and engagement in course delivery.<br>- No access to administrative or user data. |
 | **Customer Support Team** | Moderate                                 | - Access to user accounts for troubleshooting.<br>- View platform logs for issue resolution.<br>- Restricted from accessing financial data or sensitive personal information. |
 | **Marketing Team**    | Moderate                                    | - Access analytics dashboards for campaign performance.<br>- Manage user engagement and acquisition strategies.<br>- No access to user-specific personal data. |
 | **Data Analysts**     | Moderate                                    | - Generate and view aggregate reports.<br>- Analyze platform usage trends and user behavior.<br>- No ability to modify platform content or settings. |
@@ -81,8 +81,7 @@ The following stakeholders require login access to the platform to perform their
 
 ## Visual Representation
 
-![image](https://github.com/user-attachments/assets/274424ef-9398-43cb-9513-f1c03456a607)
-
+![image](https://github.com/user-attachments/assets/1bdc9299-5388-4cea-a9d9-ca8e57e1a59f)
 
 ## PlantUML Source
 
@@ -91,7 +90,7 @@ The following stakeholders require login access to the platform to perform their
 
 actor "Learners" as Learners
 actor "Language Experts" as LanguageExperts
-actor "Content Creators" as ContentCreators
+actor "Educational Content Developers" as ContentDevelopers
 actor "Educational Institutions" as EduInstitutions
 actor "Investors or Sponsors" as Investors
 actor "Developers Community" as DevCommunity
@@ -110,15 +109,16 @@ package "Project Team" {
 Learners --> Moderators : Report Content
 Learners --> SupportTeam : Request Support
 Learners --> DataAnalysts : Provide Usage Data
-LanguageExperts --> DevTeam : Collaborate on Content
-LanguageExperts --> Admins : Update Course Materials
-ContentCreators --> Admins : Upload Promotional Content
-EduInstitutions --> ProjectManager : Feedback
-EduInstitutions --> DataAnalysts : Request Reports
-Investors --> ProjectManager : Provide Funding
-DevCommunity --> DevTeam : Code Contributions
-PrivacyAuthorities --> Admins : Ensure Compliance
-RegulatoryBodies --> LanguageExperts : Validate Standards
-RegulatoryBodies --> DevTeam : Validate Course Content
+LanguageExperts --> ContentDevelopers : Provide Course Plans & Feedback
+ContentDevelopers --> DevTeam : Collaborate on Feature Implementation
+ContentDevelopers --> Admins : Implement Course Updates
+EduInstitutions --> ProjectManager : Provide Feedback
+EduInstitutions --> DataAnalysts : Request Performance Reports
+Investors --> ProjectManager : Fund the Project
+DevCommunity --> DevTeam : Contribute Code and Ideas
+PrivacyAuthorities --> Admins : Ensure Data Compliance
+RegulatoryBodies --> LanguageExperts : Validate Language Standards
+RegulatoryBodies --> DevTeam : Validate Compliance
 
 @enduml
+
