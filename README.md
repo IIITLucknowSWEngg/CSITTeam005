@@ -1,7 +1,7 @@
 # CSITTeam005
 TEAM NAME : 8BIT
 
-PROJECT IDEA : Duolingo Documentation
+PROJECT IDEA : Duolingo
 
 TEAM MEMBERS :
 
