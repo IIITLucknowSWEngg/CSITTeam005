@@ -82,27 +82,6 @@ The application is modular and organized into the following components:
 
 ---
 
-## Folder Structure
-Example structure for better scalability:
-```
-src  
-├── components  
-│   ├── Auth  
-│   ├── Lessons  
-│   ├── Progress  
-├── pages  
-├── redux  
-│   ├── slices  
-│   ├── store.js  
-├── services  
-│   ├── api.js  
-│   ├── socket.js  
-├── styles  
-├── utils  
-```
-
----
-
 
 ![image](https://github.com/user-attachments/assets/b3290e02-24fb-4402-afa1-9456e2bed38f)
 
