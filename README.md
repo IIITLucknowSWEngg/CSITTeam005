@@ -17,8 +17,6 @@ TEAM MEMBERS :
 | Prince Yadav | LIT2023050 | Information Technology | www.princetdl@gmail.com | prince9569 |
 
 
-<!-- Maybe add an image and a description of Duolingo, similar to the old repo -->
-
 
 ## Documents
 
@@ -32,3 +30,24 @@ TEAM MEMBERS :
 
 4. [Software Requirements Specification (SRS)](https://github.com/IIITLucknowSWEngg/CSITTeam005/blob/main/Assignment1/SRS.md)
 
+5. [Personas Document](https://github.com/IIITLucknowSWEngg/CSITTeam005/blob/main/Assignment1/Personas.md)
+
+### Assignment 2
+
+1. [Architecture Document](https://github.com/IIITLucknowSWEngg/CSITTeam005/blob/main/Assignment%202/Architecture.md)
+
+2. [Frontend Architecture Document](https://github.com/IIITLucknowSWEngg/CSITTeam005/blob/main/Assignment%202/Frontend_Architecture.md)
+
+3. [Backend Architecture Document](https://github.com/IIITLucknowSWEngg/CSITTeam005/blob/main/Assignment%202/Backend_Architecture.md)
+
+4. [Design Document](https://github.com/IIITLucknowSWEngg/CSITTeam005/blob/main/Assignment%202/Design.md)
+
+5. [Diagrams Document](https://github.com/IIITLucknowSWEngg/CSITTeam005/blob/main/Assignment%202/Diagrams.md)
+
+6. [Test Plan Document](https://github.com/IIITLucknowSWEngg/CSITTeam005/blob/main/Assignment%202/Test.md)
+
+7. [Cross-Reference-Matrix](https://github.com/IIITLucknowSWEngg/CSITTeam005/blob/main/Assignment%202/Cross-Reference-Matrix.md)
+
+8. [AI-Prompts](https://github.com/IIITLucknowSWEngg/CSITTeam005/blob/main/Assignment%202/AI-Prompts.md)
+
+9. [Duolingo Official Blog References](https://github.com/IIITLucknowSWEngg/CSITTeam005/blob/main/Assignment%202/blog-references-duolingo.md)
