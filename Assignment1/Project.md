@@ -7,19 +7,19 @@ What makes Duolingo special is its goal to make education free and available to 
 
 ## High-Level Goals
 - ### Engagement through Gamification:
-    Duolingo transforms learning into an interactive game by introducing points, streaks, leaderboards, and rewards. This not only keeps users motivated but also makes the process of learning a new language feel exciting and enjoyable.
+    Duolingo turns learning into an interactive game by introducing points, streaks, leaderboards, and rewards. This not only keeps users motivated but also makes the process of learning a new language feel exciting and enjoyable.
 - ### Personalized Learning Experience:
-    The app adapts to each user’s learning style and pace. Whether you're a beginner or already have some knowledge, Duolingo tailors its lessons to suit your progress and areas of improvement, ensuring an effective and customized learning journey.
+    The app adapts to each user’s learning style and pace. Whether you're a beginner or already have prior knowledge, Duolingo tailors its lessons to suit your progress and areas of improvement, ensuring an effective and customized learning journey.
 - ### Diverse Learning Modalities:
-    Learning a language isn’t just about memorizing words—it’s about understanding and using them. Duolingo offers vocabulary building, grammar exercises, listening practice, and even speaking activities powered by speech recognition to ensure users get a holistic learning experience.
+    Learning a language involves more than memorizing words. Duolingo offers vocabulary building, grammar exercises, listening practice, and even speaking activities powered by speech recognition to ensure users get a holistic learning experience.
 - ### User Progress Tracking:
-   To help users stay on track, Duolingo provides tools to set learning goals and monitor progress. Features like streak counts, progress charts, and skill evaluations give users a clear sense of how far they’ve come and what they need to focus on next.
+   Duolingo help users stay on track by provideing tools to set learning goals and monitor progress. Features like streak counts, progress charts, and skill evaluations give users a clear sense of how far they’ve come and what they need to focus on next.
 - ### Community Interaction:
    Learning together is always better! Duolingo connects users with a vibrant community of language learners, encouraging collaboration and friendly competition through shared goals and challenges.
 
 ## What the Project Will Do
 - ### Provide Language Courses:
-   The app includes structured courses in multiple languages, catering to users from beginner to advanced levels. Each course is broken down into bite-sized lessons to make learning manageable and consistent.
+   The app includes structured courses in multiple languages, catering to users from beginner to advanced levels. Each course is divided into bite-sized lessons to make learning manageable and consistent.
 - ### Make Learning Fun:
    Through gamification, Duolingo keeps users engaged with challenges, rewards, and fun exercises that turn language learning into a habit rather than a chore.
 - ### Provide Real-Time Feedback:
@@ -31,7 +31,7 @@ What makes Duolingo special is its goal to make education free and available to 
 
 ## What the Project Will Not Do
 - ### Replace Formal Education:
-   While Duolingo is an excellent learning tool, it is not designed to replace traditional classroom education or immersive language experiences.
+   While Duolingo is an excellent learning tool, it is not a substitute for traditional classroom education or immersive language experiences.
 - ### Comprehensive Language Proficiency:
    The app helps users build strong foundational skills, but achieving fluency requires additional practice and real-world interaction.
 - ### In-depth Cultural Context:
@@ -45,7 +45,7 @@ What makes Duolingo special is its goal to make education free and available to 
 - ### Speech Recognisation Accuracy:
    Speech recognition technology can sometimes struggle with accents, pronunciations, or noisy environments, which might affect feedback accuracy.
 - ### Language Complexity:
-  Languages with unique scripts, grammar rules, or structures might require additional effort in course design, leading to slight variations in user experience.
+  Languages with unique scripts, grammar rules, or structures may require additional effort in course design, leading to slight variations in user experience.
 - ### Time Investment:
    Language learning is a gradual process. While Duolingo helps you get started, consistent practice beyond the app is essential for fluency.
   
