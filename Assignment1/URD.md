@@ -183,7 +183,7 @@ This document defines the user requirements for the Duolingo project. It outline
   - I can check rankings or leaderboards to see where I stand in comparison to friends.
 
 **Requirements:**
-- I need access to friends' progress data and achievements to compare with mine.
+- I need access to friend's  progress data and achievements to compare with mine.
 - I need options to send and receive challenges from friends.
 
 **Expectations:**
@@ -235,7 +235,7 @@ This document defines the user requirements for the Duolingo project. It outline
   - I use Duolingo as a supplemental tool for language learning in schools and universities.
   - I provide feedback to improve the app’s educational features and content.
 - **Collaborate on Research:**
-  - I work with Duolingo for educational research on language learning efficacy.
+  - I work with Duolingo for educational research on language learning efficiancy.
   - I provide data for case studies and educational reports to improve language learning outcomes.
 
 **Requirements:**
