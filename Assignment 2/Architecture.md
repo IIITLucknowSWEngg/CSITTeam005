@@ -1,83 +1,134 @@
-# Duolingo Documentation Architecture
+![image](https://github.com/user-attachments/assets/49062126-ab75-447b-98b8-fa53ccdad23a)# Duolingo Documentation Architecture
 ## 1. System Context Diagram
 The System Context Diagram provides a high-level view of the Duolingo documentation system, showcasing how external actors (users and services) interact with the primary subsystems within the application. 
 
- ![image](https://github.com/user-attachments/assets/1b701eac-f29c-4388-95df-023e3a10f006)
-
+![image](https://github.com/user-attachments/assets/e8ac034e-cdc6-43b8-93ce-8055a0b18edb)
 
 
 ```
 @startuml
-' External Actors
-actor "Learner" as Player
-actor "Educator" as Admin
-actor "Notification Service" as NotificationService
+!define RECTANGLE class
+actor "Project Team" as projectTeam
+actor "Users" as users
+actor "Language Experts" as languageExperts
+actor "Educational Content Developers" as contentDevs
+actor "Educational Institutions" as eduInstitutions
+actor "Investors/Sponsors" as investors
+actor "Developers Community" as devCommunity
+actor "Regulatory Authorities" as regulatoryAuthorities
 
-' System Boundary: Duolingo App
-package "Duolingo App" {
-
-    ' Subsystems
-    rectangle "User Authentication \nand Profile Management" as AuthSystem
-    rectangle "Course Selection \nand Lesson Management" as LessonSystem
-    rectangle "Progress Tracker \nand Analytics" as ProgressTracker
-    rectangle "Leaderboard \nand Statistics" as Leaderboard
-    rectangle "In-Game Chat \nand Social Interaction" as ChatSystem
-    rectangle "Educator Panel" as AdminPanel
+rectangle DuolingoSystem {
+    usecase "Provide Language Lessons" as UC1
+    usecase "Track Learning Progress" as UC2
+    usecase "Provide Feedback to Learners" as UC3
+    usecase "Moderate Content" as UC4
+    usecase "Manage User Accounts" as UC5
+    usecase "Monitor App Performance" as UC6
+    usecase "Manage Data Privacy & Security" as UC7
 }
 
-' Relationships between actors and system components
-Player --> AuthSystem : Sign Up/Login
-Player --> LessonSystem : Learn Language
-Player --> ProgressTracker : Track Progress
-Player --> Leaderboard : View Rankings
-Player --> ChatSystem : Chat with Other Learners
+' User actors interacting with the system
+users --> UC1 : "Engage with Language Lessons"
+users --> UC2 : "Track Learning Progress"
+users --> UC3 : "Provide Feedback on Lessons"
 
-Admin --> AdminPanel : Manage Users and Content
-LessonSystem --> NotificationService : Send Lesson Reminders
+' Project Team actors interacting with the system
+projectTeam --> UC6 : "Monitor App Performance"
+projectTeam --> UC5 : "Manage User Accounts"
+
+' Language Experts interacting with the system
+languageExperts --> UC1 : "Create & Review Language Content"
+languageExperts --> UC3 : "Provide Content Feedback"
+
+' Educational Content Developers interacting with the system
+contentDevs --> UC1 : "Create Educational Content"
+contentDevs --> UC3 : "Provide Content Feedback"
+
+' Educational Institutions interacting with the system
+eduInstitutions --> UC1 : "Integrate with Curriculum"
+eduInstitutions --> UC7 : "Ensure Data Privacy Compliance"
+
+' Investors/Sponsors interacting with the system
+investors --> UC6 : "Monitor Financial & Performance Metrics"
+
+' Developers Community interacting with the system
+devCommunity --> UC1 : "Contribute Features and Enhancements"
+devCommunity --> UC7 : "Assist in Data Security Features"
+
+' Regulatory Authorities interacting with the system
+regulatoryAuthorities --> UC7 : "Audit & Enforce Data Privacy & Security Standards"
 @enduml
-
 
 ```
 ---
 ## 2. Container Diagram 
 The Container Diagram outlines the high-level architecture of the Duolingo documentation system, breaking it into containers that represent major building blocks of the system. It provides a detailed view of the system's structure, showing how these containers interact with each other and with external services.
 
-![image](https://github.com/user-attachments/assets/c86f2248-cd49-4f85-8b28-052db572d79c)
+![image](https://github.com/user-attachments/assets/8dda4d4a-ce76-45ea-afcb-1bfe4ce4bc93)
+
 
 
 ```
 @startuml
-title Container Diagram - Duolingo Documentation
+!define RECTANGLE class
+!define INTERFACE interface
 
-' Add primary containers
-rectangle "Web/Mobile App" as App <<User Interface>> #lightblue
-rectangle "API Gateway" as APIGateway <<API Gateway>> #lightgreen
-rectangle "Lesson Service" as LessonService <<Service>> #lightyellow
-rectangle "Progress Tracker Service" as ProgressService <<Service>> #lightyellow
-rectangle "Leaderboard Service" as LeaderboardService <<Service>> #lightyellow
-rectangle "Chat Service" as ChatService <<Service>> #lightyellow
+' Define Containers
+RECTANGLE "Duolingo Mobile App" as mobileApp {
+  RECTANGLE "User Interface" as ui
+  RECTANGLE "Local Storage" as storage
+  INTERFACE "Mobile API Client" as mobileAPI
+}
 
-' Database containers
-database "User Database" as UserDB <<Database>> #lightpink
-database "Lesson Database" as LessonDB <<Database>> #lightpink
-database "Leaderboard Database" as LeaderboardDB <<Database>> #lightpink
+RECTANGLE "Duolingo Web App" as webApp {
+  RECTANGLE "User Interface" as uiWeb
+  RECTANGLE "Web Server" as webServer
+  INTERFACE "Web API Client" as webAPI
+}
 
-' External services
-rectangle "Notification Service" as NotificationService <<External Service>> #lightgray
+RECTANGLE "API Server" as apiServer {
+  RECTANGLE "API Endpoints" as apiEndpoints
+  RECTANGLE "Authentication Service" as authService
+  RECTANGLE "Data Processing Service" as dataService
+}
 
-' Relationships between containers
-App --> APIGateway : API Requests
-APIGateway --> LessonService : Manage Lessons
-APIGateway --> ProgressService : Track Progress
-APIGateway --> LeaderboardService : Rankings
-APIGateway --> ChatService : Messaging
-APIGateway --> NotificationService : Player Notifications
+RECTANGLE "Database" as database {
+  RECTANGLE "User Data" as userData
+  RECTANGLE "Lesson Data" as lessonData
+  RECTANGLE "Progress Tracking" as progressData
+}
 
-LessonService --> LessonDB : Manage Lessons
-ProgressService --> UserDB : User Progress
-LeaderboardService --> LeaderboardDB : Update Rankings
+' Define Relationships
+mobileApp -down-> mobileAPI : Uses
+mobileApp -down-> storage : Stores Local Data
+mobileAPI -down-> apiServer : Communicates via REST API
+apiServer -down-> apiEndpoints : Exposes API Endpoints
+apiServer -down-> authService : Manages User Authentication
+apiServer -down-> dataService : Provides Data Processing
+apiServer -down-> database : Queries Data
+
+webApp -down-> webAPI : Uses
+webApp -down-> webServer : Hosts Web Application
+webAPI -down-> apiServer : Communicates via REST API
+webServer -down-> apiEndpoints : Requests Data from API
+webServer -down-> authService : Manages User Authentication
+
+database -down-> userData : Stores User Data
+database -down-> lessonData : Stores Lesson Content
+database -down-> progressData : Stores Learning Progress
+
+' External Systems and Stakeholders
+INTERFACE "Content Moderators" as contentModerators
+INTERFACE "Customer Support" as customerSupport
+INTERFACE "Data Analysts" as dataAnalysts
+INTERFACE "Language Experts" as languageExperts
+
+contentModerators -down-> apiServer : Reviews and Flags Content
+customerSupport -down-> apiServer : Handles User Queries
+dataAnalysts -down-> apiServer : Analyzes User Data
+languageExperts -down-> apiServer : Reviews and Curates Content
+
 @enduml
-
 
 ```
 ---
