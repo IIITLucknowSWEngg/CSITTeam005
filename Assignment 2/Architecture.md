@@ -138,34 +138,120 @@ The Component Diagram breaks down the key subsystems of the Duolingo documentati
 ### 3.1 Component Diagram for Learners (Players)
 This diagram shows the system components and interactions from the learner's perspective.
 
-![image](https://github.com/user-attachments/assets/43eda53c-004a-460e-9f7d-119f347081bf)
 
-
+![image](https://github.com/user-attachments/assets/ca714b82-679b-4a24-a0c5-9e914b399ef8)
 
 
 ```
 @startuml
-' External Actor
-actor "Learner" as Player
 
-' System Boundary: Duolingo App
-package "Duolingo App" {
+!define RECTANGLE class
 
-    ' Subsystems for Player
-    rectangle "Authentication \nand Profile Management" as AuthSystem
-    rectangle "Course Selection \nand Lesson Management" as LessonSystem
-    rectangle "Progress Tracker \nand Analytics" as ProgressTracker
-    rectangle "Leaderboard \nand Statistics" as Leaderboard
-    rectangle "In-Game Chat \nand Social Interaction" as ChatSystem
+' Components for user interaction
+package "Player Interaction" {
+    RECTANGLE Player {
+        +signUp()
+        +login()
+        +completeLesson()
+        +trackProgress()
+        +giveFeedback()
+        +viewLeaderboard()
+    }
+
+    RECTANGLE LessonModule {
+        +startLesson()
+        +takeQuiz()
+        +getInstantFeedback()
+        +viewLessonHistory()
+    }
+
+    RECTANGLE SocialFeatures {
+        +sendChallenge()
+        +viewFriendProgress()
+        +viewFriendLeaderboard()
+    }
+
+    RECTANGLE FeedbackSystem {
+        +submitBugReport()
+        +submitContentFeedback()
+        +rateLesson()
+    }
+
+    RECTANGLE ProgressTracker {
+        +viewProgress()
+        +trackSkillLevels()
+        +setGoals()
+    }
+
+    Player --> LessonModule : interacts with
+    Player --> SocialFeatures : engages with
+    Player --> FeedbackSystem : provides feedback to
+    Player --> ProgressTracker : tracks progress through
 }
 
-' Relationships between Player and system components
-Player --> AuthSystem : Sign Up/Login
-Player --> LessonSystem : Learn Language
-Player --> ProgressTracker : Track Progress
-Player --> Leaderboard : View Rankings
-Player --> ChatSystem : Chat with Other Learners
+' Components for content and performance management
+package "Content & Performance" {
+    RECTANGLE ContentManager {
+        +createLesson()
+        +updateLesson()
+        +localizeLesson()
+    }
+
+    RECTANGLE PerformanceTracker {
+        +analyzeUserData()
+        +generateReports()
+        +suggestImprovements()
+    }
+
+    RECTANGLE Analytics {
+        +collectUserData()
+        +generateInsights()
+        +improveLearningPaths()
+    }
+
+    ContentManager --> LessonModule : provides lessons to
+    PerformanceTracker --> ProgressTracker : tracks user performance via
+    Analytics --> PerformanceTracker : provides data to
+}
+
+' Components for system administration and security
+package "Admin & Security" {
+    RECTANGLE AdminPanel {
+        +manageUserAccounts()
+        +assignPermissions()
+        +auditAppUsage()
+    }
+
+    RECTANGLE SecurityModule {
+        +monitorForVulnerabilities()
+        +ensureDataPrivacy()
+        +performSecurityAudits()
+    }
+
+    AdminPanel --> Player : manages
+    AdminPanel --> ContentManager : updates lessons
+    SecurityModule --> Player : protects user data
+    SecurityModule --> ContentManager : ensures content security
+}
+
+' External Stakeholders for integration and compliance
+package "External Stakeholders" {
+    RECTANGLE DataPrivacy {
+        +ensureGDPRCompliance()
+        +monitorDataHandling()
+    }
+
+    RECTANGLE EducationalInstitutions {
+        +integrateWithCurriculum()
+        +provideFeedback()
+    }
+
+    DataPrivacy --> SecurityModule : monitors compliance
+    EducationalInstitutions --> ContentManager : provides curriculum insights
+}
+
 @enduml
+
 
 ```
 ### 3.2 Component Diagram for Admins
@@ -359,43 +445,8 @@ LeaderboardRepository --> "Database (Progress Table)" : "Stores Score Data"
 ```
 ![image](https://github.com/user-attachments/assets/dd2051f4-352c-4ea0-968f-b3c9994da8d7)
 
-### 5. In-Game Chat and Social Interaction
-This component handles in-game communication between players.
-```
-@startuml
-title C4 Code Diagram - In-Game Chat and Social Interaction
-
-package "In-Game Chat and Social Interaction" {
-    class ChatService {
-        + sendMessage(senderId: String, receiverId: String, message: String): void
-        + getMessages(userId: String): List<Message>
-    }
-
-    class Message {
-        - senderId: String
-        - receiverId: String
-        - content: String
-        - timestamp: Date
-        + getContent(): String
-        + getTimestamp(): Date
-    }
-
-    class ChatRepository {
-        + saveMessage(message: Message): void
-        + fetchMessages(userId: String): List<Message>
-    }
-}
-
-ChatService --> Message : "Manages Messages"
-ChatService --> ChatRepository : "CRUD Operations"
-ChatRepository --> "Database (Messages Table)" : "Stores Messages"
-@enduml
-
-```
-![image](https://github.com/user-attachments/assets/d77fb0b8-85a2-40f5-8f98-7c912a4d467b)
-
-### 6. Admin Panel Components
-#### 6.1 User Management
+### 5. Admin Panel Components
+#### 5.1 User Management
 ```
 @startuml
 title C4 Code Diagram - User Management
@@ -430,7 +481,7 @@ UserRepository --> "Database (Users Table)" : "CRUD Operations"
 ```
 ![image](https://github.com/user-attachments/assets/c0b97527-3250-4c7d-9bcb-e470f830215e)
 
-#### 6.2Content Management
+#### 5.2Content Management
 ```
 v@startuml
 title C4 Code Diagram - Content Management
@@ -469,45 +520,56 @@ ContentRepository --> "Database (Courses Table)" : "CRUD Operations"
 # 5. Deployment Diagram
 The Deployment Diagram illustrates the physical deployment of the Duolingo documentation system, including the hardware, software, and external services involved. It showcases how the system’s components are distributed across various nodes and interact to deliver functionality.
 
-![image](https://github.com/user-attachments/assets/2b95a395-2a60-41e0-a9ef-1f9603930c45)
+![image](https://github.com/user-attachments/assets/ad284b07-2e8a-4f79-a81b-8131100468de)
 
 
 ```
 @startuml
-title Deployment Diagram - Duolingo Documentation
-
-node "Player's Device" {
-    [Web/Mobile App] <<User Interface>>
+' Define nodes
+node "User Devices" as UserDevices {
+  component "Mobile App" as MobileApp
+  component "Web App" as WebApp
 }
-
-node "Server" {
-    [API Gateway] <<API Gateway>>
-    [Lesson Service] <<Service>>
-    [Progress Tracker Service] <<Service>>
-    [Leaderboard Service] <<Service>>
-    [Chat Service] <<Service>>
+node "Frontend Servers" as FrontendServers {
+  component "API Server" as APIServer
+  component "Load Balancer" as LoadBalancer
 }
-
-node "Database Server" {
-    database "User Database" as UserDB
-    database "Lesson Database" as LessonDB
-    database "Leaderboard Database" as LeaderboardDB
+node "Application Servers" as AppServers {
+  component "Language Learning Engine" as LearningEngine
+  component "Content Management System" as CMS
+  component "Authentication Service" as AuthService
 }
-
-cloud "External Services" {
-    [Notification Service] <<External Service>>
+node "Database Servers" as DBServers {
+  component "User Database" as UserDB
+  component "Course Database" as CourseDB
+  component "Analytics Database" as AnalyticsDB
 }
-
-' Connections
-[Web/Mobile App] --> [API Gateway] : API Calls
-[API Gateway] --> [Lesson Service] : Manage Lessons
-[API Gateway] --> [Progress Tracker Service] : Track Progress
-[API Gateway] --> [Leaderboard Service] : Rankings
-[API Gateway] --> [Chat Service] : Chat Messages
-[Lesson Service] --> LessonDB : Store Lesson Data
-[Progress Tracker Service] --> UserDB : User Data
-[Leaderboard Service] --> LeaderboardDB : Rankings
+' Define relationships
+UserDevices -down-> APIServer : Uses API
+APIServer -down-> LoadBalancer : Distributes Requests
+LoadBalancer -down-> LearningEngine : Forwards Requests for Learning Services
+LoadBalancer -down-> CMS : Forwards Requests for Content Services
+LoadBalancer -down-> AuthService : Forwards Authentication Requests
+LearningEngine -down-> CourseDB : Retrieves Course Data
+LearningEngine -down-> UserDB : Retrieves User Progress Data
+LearningEngine -down-> AnalyticsDB : Sends Performance Data
+CMS -down-> CourseDB : Updates Course Content
+AuthService -down-> UserDB : Validates User Credentials
+FrontendServers -down-> AppServers : Relays Requests
+AppServers -down-> DBServers : Data Storage and Retrieval
+' Define notes
+note right of UserDevices
+  "Mobile and Web Apps used by end users to\n access language learning features."
+end note
+note right of FrontendServers
+  "API Server and Load Balancer handle user requests and route them\n to appropriate services."
+end note
+note right of AppServers
+  "Application servers handle learning engine, content management,\nand authentication services."
+end note
+note right of DBServers
+  "Database servers store user data, course content, and analytics."
+end note
 @enduml
-
 ```
 ---
