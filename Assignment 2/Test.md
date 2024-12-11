@@ -13,7 +13,7 @@ This document outlines the test plan for Duolingo, a language-learning platform,
 
 ## Test Items
 ### Test Items and Their Versions:
-- **Language Courses**: Spanish, French, German, Italian, Japanese (Version 1.2)
+- **Language Courses**: English, Spanish, French, German, Italian, Japanese (Version 1.2)
 - **Mobile App (iOS and Android)**: Version 4.5
 - **Speech Recognition Engine**: Version 2.3
 - **User Profile Management System**: Version 3.0
