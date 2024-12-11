@@ -283,7 +283,7 @@ Duolingo is a gamified and adaptive language learning platform available on mobi
 - **Real-Time Communication:** WebSocket (via Socket.IO) for live updates such as progress tracking and leaderboard rankings  
 
 ### Cloud Infrastructure:
-- **Hosting:** Hosted on scalable cloud infrastructure (e.g., AWS, Azure) for high availability and automatic scaling based on demand  
+- **Hosting:** Hosted on scalable cloud infrastructure (AWS) for high availability and automatic scaling based on demand  
 - **Load Balancing:** Using a load balancer to distribute traffic evenly across servers to ensure high availability and optimal performance during peak traffic times.  
 - **CDN:** Content Delivery Network (CDN) for faster content delivery to users globally.  
 
