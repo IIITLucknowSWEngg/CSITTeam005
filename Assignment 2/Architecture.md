@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/49062126-ab75-447b-98b8-fa53ccdad23a)# Duolingo Documentation Architecture
+# Duolingo Documentation Architecture
 ## 1. System Context Diagram
 The System Context Diagram provides a high-level view of the Duolingo documentation system, showcasing how external actors (users and services) interact with the primary subsystems within the application. 
 
