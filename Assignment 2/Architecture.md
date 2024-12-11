@@ -520,31 +520,40 @@ ContentRepository --> "Database (Courses Table)" : "CRUD Operations"
 # 5. Deployment Diagram
 The Deployment Diagram illustrates the physical deployment of the Duolingo documentation system, including the hardware, software, and external services involved. It showcases how the system’s components are distributed across various nodes and interact to deliver functionality.
 
-![image](https://github.com/user-attachments/assets/ad284b07-2e8a-4f79-a81b-8131100468de)
-
+![image](https://github.com/user-attachments/assets/135b649f-562a-4170-a31a-79b9817cc398)
 
 ```
 @startuml
-' Define nodes
-node "User Devices" as UserDevices {
-  component "Mobile App" as MobileApp
-  component "Web App" as WebApp
+' Define cloud provider
+node "Cloud Provider (AWS)" as CloudProvider {
+    node "Global Infrastructure" as GlobalInfra {
+        node "User Devices" as UserDevices {
+            component "Mobile App" as MobileApp
+            component "Web App" as WebApp
+        }
+        node "Frontend Servers" as FrontendServers {
+            component "API Server" as APIServer
+            component "Load Balancer" as LoadBalancer
+        }
+        node "Content Delivery Network" as CDNNode {
+            component "Global CDN" as CDN
+        }
+        node "Application Servers" as AppServers {
+            component "Language Learning Engine" as LearningEngine
+            component "Content Management System" as CMS
+            component "Authentication Service" as AuthService
+        }
+        node "Database Servers" as DBServers {
+            component "User Database" as UserDB
+            component "Course Database" as CourseDB
+            component "Analytics Database" as AnalyticsDB
+        }
+    }
 }
-node "Frontend Servers" as FrontendServers {
-  component "API Server" as APIServer
-  component "Load Balancer" as LoadBalancer
-}
-node "Application Servers" as AppServers {
-  component "Language Learning Engine" as LearningEngine
-  component "Content Management System" as CMS
-  component "Authentication Service" as AuthService
-}
-node "Database Servers" as DBServers {
-  component "User Database" as UserDB
-  component "Course Database" as CourseDB
-  component "Analytics Database" as AnalyticsDB
-}
+
 ' Define relationships
+UserDevices -down-> CDN : Retrieve Cached Content
+CDN -down-> APIServer : Request Dynamic Content
 UserDevices -down-> APIServer : Uses API
 APIServer -down-> LoadBalancer : Distributes Requests
 LoadBalancer -down-> LearningEngine : Forwards Requests for Learning Services
@@ -554,21 +563,24 @@ LearningEngine -down-> CourseDB : Retrieves Course Data
 LearningEngine -down-> UserDB : Retrieves User Progress Data
 LearningEngine -down-> AnalyticsDB : Sends Performance Data
 CMS -down-> CourseDB : Updates Course Content
+CMS -down-> CDN : Pushes Static Content
 AuthService -down-> UserDB : Validates User Credentials
 FrontendServers -down-> AppServers : Relays Requests
 AppServers -down-> DBServers : Data Storage and Retrieval
+
 ' Define notes
+note right of CloudProvider
+  "Cloud-based infrastructure providing 
+  global scalability and reliability"
+end note
+note right of CDNNode
+  "Distributed network of cached content 
+  to reduce latency and improve 
+  application performance"
+end note
 note right of UserDevices
-  "Mobile and Web Apps used by end users to\n access language learning features."
-end note
-note right of FrontendServers
-  "API Server and Load Balancer handle user requests and route them\n to appropriate services."
-end note
-note right of AppServers
-  "Application servers handle learning engine, content management,\nand authentication services."
-end note
-note right of DBServers
-  "Database servers store user data, course content, and analytics."
+  "Mobile and Web Apps used by end users 
+  to access language learning features"
 end note
 @enduml
 ```
