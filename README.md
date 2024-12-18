@@ -51,3 +51,7 @@ TEAM MEMBERS :
 8. [AI-Prompts](https://github.com/IIITLucknowSWEngg/CSITTeam005/blob/main/Assignment%202/AI-Prompts.md)
 
 9. [Duolingo Official Blog References](https://github.com/IIITLucknowSWEngg/CSITTeam005/blob/main/Assignment%202/blog-references-duolingo.md)
+
+
+## Screenshot
+![Screenshot 2024-12-11 214348](https://github.com/user-attachments/assets/6f7e09d6-a915-41de-972e-c1fab5975231)
